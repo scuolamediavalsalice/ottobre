@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 12 ottobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        warm: {
+                            bg: '#FFFDF9',        /* Warm Soft Cream Background */
+                            surface: '#FFFFFF',   /* Pure White Cards */
+                            dark: '#1C1917',      /* High Contrast Charcoal */
+                            muted: '#78716C',     /* Muted Text */
+                            orange: '#F97316',    /* Primary Warm Orange */
+                            amber: '#F59E0B',     /* Sunset Amber */
+                            coral: '#FF6B52',     /* Accent Coral */
+                            peach: '#FFEDD5',     /* Soft Peach Fill */
+                            border: '#E7E5E4'     /* Subtle Neutral Border */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .clean-shadow {
+            box-shadow: 0 10px 25px -5px rgba(249, 115, 22, 0.12), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+        }
+        .pop-card-dark {
+            border: 2px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #1C1917;
+        }
+        .pop-card-orange {
+            border: 2px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #F97316;
+        }
+        .pop-card-amber {
+            border: 2px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #F59E0B;
+        }
+    </style>
+</head>
+<body class="bg-warm-bg text-warm-dark font-sans antialiased overflow-x-hidden selection:bg-warm-orange selection:text-white">
+
+    <!-- SLIDE 1: HERO CENTRATA -->
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 border-b-4 border-warm-orange relative">
+        
+        <!-- Header Top -->
+        <div class="flex justify-between items-center pb-4 border-b border-warm-border max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-warm-dark text-white px-3 py-1.5 rounded-lg uppercase tracking-wider">
+              SCUOLA MEDIA VALSALICE
+            </span>
+            <span class="bg-warm-peach text-warm-orange border border-warm-orange/30 px-3 py-1.5 rounded-lg uppercase tracking-wider">
+                LUNEDÌ 12 OTTOBRE
+            </span>
+        </div>
+
+        <!-- Layout Centrale Hero -->
+        <div class="my-auto max-w-4xl mx-auto w-full text-center space-y-7">
+            
+            <div class="inline-flex items-center gap-2 bg-warm-peach text-warm-orange font-mono font-bold text-xs md:text-sm px-4 py-2 rounded-full border border-warm-orange/30 mx-auto">
+                <span>📚</span> FORMAZIONE COSTANTE & RESPONSABILITÀ
+            </div>
+
+            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight text-warm-dark leading-tight">
+                NON SI <br>
+                <span class="bg-gradient-to-r from-warm-orange via-warm-coral to-warm-amber bg-clip-text text-transparent">
+                    IMPROVVISA NULLA
+                </span>
+            </h1>
+
+            <p class="text-lg md:text-2xl font-semibold text-warm-muted max-w-2xl mx-auto leading-relaxed">
+                Per fare bene il bene non basta la buona volontà: servono studio, impegno e costanza.
+            </p>
+
+            <div class="p-6 md:p-8 bg-warm-surface rounded-2xl pop-card-dark max-w-2xl mx-auto text-left md:text-center text-warm-dark font-medium text-base md:text-lg leading-relaxed">
+                Nessun grande risultato nasce per caso. Anche aiutare gli altri e fare la differenza richiede preparazione, serietà e cura dei dettagli.
+            </div>
+
+            <!-- Badge Citazione Don Bosco -->
+            <div class="inline-block bg-warm-peach/60 border border-warm-orange/30 p-4 rounded-xl text-center max-w-md mx-auto">
+                <p class="text-warm-dark font-semibold text-sm md:text-base italic">
+                    "Io per voi studio, per voi lavoro, per voi sono disposto anche a dare la vita."
+                </p>
+                <span class="text-xs font-mono font-bold text-warm-orange block uppercase mt-1">
+                    — Don Bosco ai suoi ragazzi
+                </span>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t border-warm-border max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="hidden md:inline text-warm-muted">LA PREPARAZIONE FA LA DIFFERENZA ⚡</span>
+            <a href="#slide-2" class="w-full md:w-auto text-center bg-warm-orange text-white px-6 py-3 rounded-xl hover:bg-warm-dark transition-all duration-200 pop-card-dark font-bold">
+                1. SCOPRI L'OGGETTO SIMBOLO &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 2: ATTIVITÀ OGGETTO SIMBOLO (DUAL CARDS) -->
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-warm-peach/30 border-b-4 border-warm-orange">
+        
+        <div class="flex justify-between items-center pb-4 border-b border-warm-border max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-warm-orange text-white px-3 py-1.5 rounded-lg uppercase tracking-wider">// 01 ATTIVITÀ STIMOLO</span>
+            <span class="text-warm-muted">Slide 2 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-5xl mx-auto w-full space-y-8">
+            
+            <div class="text-center space-y-2 max-w-2xl mx-auto">
+                <span class="bg-warm-surface text-warm-dark font-mono font-bold text-xs px-4 py-1.5 rounded-full border border-warm-border">
+                    🔍 OGGETTI SIMBOLO
+                </span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-warm-dark">
+                    Cosa succede se<br><span class="text-warm-orange">non ti sei allenato?</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 items-stretch">
+                
+                <!-- Card 1: Kit di Pronto Soccorso -->
+                <div class="bg-warm-surface p-7 rounded-3xl pop-card-orange space-y-5 text-left flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="w-14 h-14 bg-warm-peach text-warm-orange rounded-2xl border border-warm-orange/30 flex items-center justify-center text-3xl font-bold">
+                            🩹
+                        </div>
+                        <h3 class="text-2xl font-bold text-warm-dark">
+                            Il kit di pronto soccorso
+                        </h3>
+                        <p class="text-warm-muted leading-relaxed font-medium text-sm md:text-base">
+                            Un kit di pronto soccorso nelle mani di chi non sa come usarlo è inutile o perfino pericoloso. La tentazione di aiutare non basta se non conosci le manovre corrette.
+                        </p>
+                    </div>
+
+                    <div class="p-3 bg-warm-peach/40 rounded-xl font-mono text-xs font-bold text-warm-orange border border-warm-orange/20">
+                        ⚡ Aiutare richiede competenza, non solo buona volontà.
+                    </div>
+                </div>
+
+                <!-- Card 2: Lo Strumento Musicale -->
+                <div class="bg-warm-surface p-7 rounded-3xl pop-card-amber space-y-5 text-left flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="w-14 h-14 bg-warm-peach text-warm-amber rounded-2xl border border-warm-amber/30 flex items-center justify-center text-3xl font-bold">
+                            🎻
+                        </div>
+                        <h3 class="text-2xl font-bold text-warm-dark">
+                            Lo strumento musicale
+                        </h3>
+                        <p class="text-warm-muted leading-relaxed font-medium text-sm md:text-base">
+                            Senza ore di solfeggio e stonate in solitudine, nessuno sale sul palco per un concerto. L'armonia perfetta che gli altri ascoltano è figlia di un lavoro invisibile.
+                        </p>
+                    </div>
+
+                    <div class="p-3 bg-warm-peach/40 rounded-xl font-mono text-xs font-bold text-warm-amber border border-warm-amber/20">
+                        🎶 Il talento senza esercizio costante rimane un'illusione.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t border-warm-border max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-1" class="text-warm-muted hover:text-warm-dark">&larr; INDIETRO</a>
+            <a href="#slide-3" class="bg-warm-dark text-white px-5 py-2.5 rounded-xl hover:bg-warm-orange transition font-bold">
+                2. GUARDA L'ESEMPIO DI DON BOSCO &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: RIFLESSIONE METODICA -->
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 border-b-4 border-warm-orange">
+        
+        <div class="flex justify-between items-center pb-4 border-b border-warm-border max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-warm-amber text-white px-3 py-1.5 rounded-lg uppercase tracking-wider">// 02 RIFLESSIONE CARISMATICA</span>
+            <span class="text-warm-muted">Slide 3 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-5xl mx-auto w-full space-y-8">
+            
+            <div class="text-center space-y-2 max-w-2xl mx-auto">
+                <span class="bg-warm-peach text-warm-orange font-mono font-bold text-xs px-3 py-1 rounded-full uppercase border border-warm-orange/30">
+                    📖 L'INSEGNAMENTO DI DON BOSCO
+                </span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-warm-dark">
+                    Lo studio come <span class="text-warm-orange">atto d'amore</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 items-stretch">
+                
+                <!-- Left Card -->
+                <div class="bg-warm-surface p-7 rounded-2xl pop-card-dark space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <span class="inline-block bg-warm-peach text-warm-orange font-mono font-bold text-xs px-3 py-1 rounded-md uppercase">
+                            💡 DON BOSCO STUDIAVA OGNI GIORNO
+                        </span>
+                        <h3 class="text-2xl font-bold text-warm-dark">
+                            Offrire sempre il meglio
+                        </h3>
+                        <p class="text-warm-muted leading-relaxed font-medium text-base">
+                            Don Bosco passava le notti a scrivere e a studiare storia, grammatica e pedagogia, perché voleva risposte concrete ai problemi dei ragazzi dell'Oratorio.
+                        </p>
+                    </div>
+
+                    <div class="p-3 bg-warm-bg rounded-lg font-mono text-xs font-bold text-warm-dark border border-warm-border">
+                        📌 Essere preparati è una forma di rispetto verso chi ci circonda.
+                    </div>
+                </div>
+
+                <!-- Right Card -->
+                <div class="bg-warm-dark text-white p-7 rounded-2xl pop-card-orange space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <span class="inline-block bg-warm-orange text-white font-mono font-bold text-xs px-3 py-1 rounded-md uppercase">
+                            🌱 IL TUO FUTURO E QUELLO DEGLI ALTRI
+                        </span>
+                        <h3 class="text-2xl font-bold text-warm-amber">
+                            La scuola è la tua palestra
+                        </h3>
+                        <p class="text-gray-300 leading-relaxed font-medium text-base">
+                            Ciò che impari oggi in classe non serve solo per il voto della verifica: costruisce il professionista e l'adulto su cui gli altri un giorno potranno fare affidamento.
+                        </p>
+                    </div>
+
+                    <div class="p-3 bg-warm-orange/20 rounded-lg font-mono text-xs font-bold text-warm-amber border border-warm-orange/40">
+                        ⚡ Il valore del tuo tempo oggi misura l'impatto di domani.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t border-warm-border max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-2" class="text-warm-muted hover:text-warm-dark">&larr; INDIETRO</a>
+            <a href="#slide-4" class="bg-warm-orange text-white px-5 py-2.5 rounded-xl hover:bg-warm-dark transition font-bold">
+                3. ACCETTA LA SFIDA DI OGGI &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: ESERCIZIO PRATICO & PREGHIERA -->
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-warm-peach/20">
+        
+        <div class="flex justify-between items-center pb-4 border-b border-warm-border max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-warm-coral text-white px-3 py-1.5 rounded-lg uppercase tracking-wider">// 03 IMPEGNO E PREGHIERA</span>
+            <span class="text-warm-muted">Slide 4 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-3xl mx-auto text-center space-y-7 w-full">
+            
+            <div class="inline-flex items-center gap-2 bg-warm-surface text-warm-orange border border-warm-orange/30 font-mono font-bold text-xs px-4 py-1.5 rounded-full mx-auto">
+                ⏱️ PREGHIERA DEL GIORNO
+            </div>
+
+           
+            <!-- Challenge Box -->
+            <div class="bg-warm-surface p-6 md:p-8 rounded-3xl pop-card-dark text-center space-y-4 clean-shadow">
+                <div class="flex items-center gap-3">
+                                   </div>
+                <p class="text-base md:text-lg font-semibold text-warm-dark leading-relaxed">
+ Signore, donaci la costanza nell'impegno di ogni giorno.<br>Aiutaci a capire che lo studio e la preparazione sono gli strumenti con cui potremo davvero aiutare gli altri e costruire un mondo migliore.<p>Amen.                </p>
+            </div>
+
+    
+
+            <div class="inline-block bg-warm-orange text-white font-mono font-bold text-xs md:text-sm px-6 py-3 rounded-xl pop-card-dark">
+                🚀 COSTRUISCI IL TUO FUTURO UN PASSO ALLA VOLTA!
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t border-warm-border max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-3" class="text-warm-muted hover:text-warm-dark">&larr; INDIETRO</a>
+            <span class="text-warm-orange uppercase">BUON LUNEDÌ 12 OTTOBRE! ✨</span>
+        </div>
+    </section>
+
+</body>
+</html>

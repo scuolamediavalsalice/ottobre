@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 29 ottobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        page: '#F8FAFC',      /* Sfondo chiaro */
+                        pageAlt: '#F1F5F9',   /* Sfondo neutro 2 */
+                        darkPage: '#0F172A',  /* Sfondo scuro alternato */
+                        card: '#FFFFFF',      /* Sfondo card chiaro */
+                        txt: '#0F172A',       /* Antracite scuro */
+                        muted: '#475569',     /* Grigio scuro leggibile */
+                        accent: '#EA580C',    /* Arancione accento */
+                        highlight: '#DC2626'  /* Rosso accento */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+
+        .timer-progress {
+            transition: stroke-dashoffset 1s linear;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- SLIDE 1: CHIARO (HOME & TIMER) -->
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-page text-txt border-b border-slate-200">
+        
+        <!-- Header -->
+        <header class="flex justify-between items-center max-w-4xl mx-auto w-full border-b border-slate-200 pb-4">
+            <span class="font-mono text-xs md:text-sm font-semibold tracking-wider text-muted uppercase">
+                Scuola media Valsalice
+            </span>
+            <span class="font-mono text-xs md:text-sm font-bold bg-slate-200 text-txt px-3 py-1 rounded-md">
+               Giovedì 29 ottobre
+            </span>
+        </header>
+
+        <!-- Content -->
+        <div class="my-auto max-w-3xl mx-auto w-full space-y-10 py-6">
+            
+            <div class="text-center space-y-3">
+                <span class="text-xs md:text-sm font-mono font-bold tracking-widest text-accent uppercase">
+                    Sfida a tempo in classe
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-txt tracking-tight">
+                    La staffetta
+                </h1>
+                <p class="text-muted text-base md:text-lg max-w-xl mx-auto font-medium">
+                    Prendete un oggetto leggero (gomma, evidenziatore...) e dal primo banco in fondo a sinistra fatelo arrivare in prima fila entro 45 secondi.
+                </p>
+            </div>
+
+            <!-- Card Principale -->
+            <div class="grid md:grid-cols-2 gap-8 items-center bg-card p-8 rounded-2xl border border-slate-200 shadow-sm">
+                
+                <!-- Regole -->
+                <div class="space-y-4">
+                    <h2 class="text-xs font-mono uppercase tracking-wider text-muted font-bold">
+                        Regole della sfida
+                    </h2>
+                    <ul class="space-y-3 text-base md:text-lg font-medium text-txt">
+                        <li class="flex items-start gap-3">
+                            <span class="w-2 h-2 rounded-full bg-accent mt-2.5 shrink-0"></span>
+                            <span>L'oggetto deve toccare le mani di <strong>tutti i compagni</strong>.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-2 h-2 rounded-full bg-highlight mt-2.5 shrink-0"></span>
+                            <span>Massimo <strong>2 secondi a testa</strong> prima di passarlo.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-2 h-2 rounded-full bg-txt mt-2.5 shrink-0"></span>
+                            <span>Arrivare in tempo al banco in prima fila a destra.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Timer -->
+                <div class="flex flex-col items-center justify-center space-y-5 border-t md:border-t-0 md:border-l border-slate-200 pt-6 md:pt-0 md:pl-8">
+                    <div class="relative w-40 h-40 flex items-center justify-center">
+                        <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="42" stroke="#E2E8F0" stroke-width="6" fill="transparent" />
+                            <circle id="timer-ring" class="timer-progress" cx="50" cy="50" r="42" stroke="#EA580C" stroke-width="6" stroke-linecap="round" fill="transparent" stroke-dasharray="263.89" stroke-dashoffset="0" />
+                        </svg>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center">
+                            <span id="timer-display" class="font-mono text-4xl font-extrabold text-txt tracking-tight">00:45</span>
+                            <span id="timer-status" class="text-xs font-mono text-muted font-bold uppercase mt-1">Pronto</span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2 w-full max-w-[220px]">
+                        <button id="btn-start" onclick="toggleTimer()" class="flex-1 bg-txt text-white font-semibold py-2.5 rounded-xl text-xs uppercase tracking-wider hover:bg-black transition">
+                            Avvia
+                        </button>
+                        <button id="btn-reset" onclick="resetTimer()" class="bg-slate-100 text-txt font-semibold px-4 py-2.5 rounded-xl text-xs uppercase tracking-wider hover:bg-slate-200 transition">
+                            Reset
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="flex justify-between items-center max-w-4xl mx-auto w-full pt-4 border-t border-slate-200">
+            <span class="text-xs md:text-sm font-mono text-muted">Far circolare il bene</span>
+            <a href="#slide-2" class="text-xs md:text-sm font-bold text-accent hover:underline">
+                Il nesso con la vita &rarr;
+            </a>
+        </footer>
+    </section>
+
+    <!-- SLIDE 2: SCURO ALTERNATO (CARISMA E DONO) -->
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-darkPage text-white border-b border-slate-800">
+        
+        <header class="flex justify-between items-center max-w-4xl mx-auto w-full border-b border-slate-800 pb-4">
+            <span class="font-mono text-xs md:text-sm font-semibold tracking-wider text-slate-400 uppercase">
+                Inquadramento Carismatico
+            </span>
+            <span class="font-mono text-xs md:text-sm font-bold bg-slate-800 text-white px-3 py-1 rounded-md">
+                02 / 04
+            </span>
+        </header>
+
+        <div class="my-auto max-w-3xl mx-auto w-full space-y-8 py-6">
+            
+            <div class="text-center space-y-3">
+                <span class="text-xs md:text-sm font-mono font-bold tracking-widest text-amber-400 uppercase">
+                    La regola del dono
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white leading-tight">
+                    "Avete ricevuto gratuitamente, <br>
+                    <span class="text-amber-400">gratuitamente date"</span>
+                </h2>
+                <h4> - Matteo 10, 8 </h4>
+            </div>
+
+            <div class="bg-slate-800/80 p-8 rounded-2xl border border-slate-700 shadow-sm space-y-6">
+                <p class="text-base md:text-xl text-slate-100 text-center font-semibold leading-relaxed">
+                    Cosa sarebbe successo se a metà percorso qualcuno<br>avesse tenuto l'oggetto in tasca? <br>
+                    <span class="text-red-400 font-bold">La staffetta si sarebbe bloccata e il gioco sarebbe finito.</span>
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-6 pt-4 border-t border-slate-700">
+                    <div class="p-5 rounded-xl bg-slate-900/80 border border-red-500/30 space-y-2">
+                        <h3 class="font-mono text-xs font-bold text-red-400 uppercase tracking-wider">
+                            Se lo tieni per te
+                        </h3>
+                        <p class="text-sm md:text-base text-slate-300 leading-relaxed font-medium">
+                            Intelligenza, simpatia, pazienza: se li teniamo stretti per pigrizia o egoismo, interrompiamo il flusso positivo attorno a noi.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-xl bg-slate-900/80 border border-amber-500/30 space-y-2">
+                        <h3 class="font-mono text-xs font-bold text-amber-400 uppercase tracking-wider">
+                            Se lo fai circolare
+                        </h3>
+                        <p class="text-sm md:text-base text-slate-300 leading-relaxed font-medium">
+                            Tutto ciò che abbiamo di bello l'abbiamo ricevuto gratis. Quando lo regaliamo senza chiedere nulla in cambio, ci sosteniamo a vicenda.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="flex justify-between items-center max-w-4xl mx-auto w-full pt-4 border-t border-slate-800">
+            <a href="#slide-1" class="text-xs md:text-sm font-bold text-slate-400 hover:text-white">&larr; Indietro</a>
+            <a href="#slide-3" class="text-xs md:text-sm font-bold text-amber-400 hover:underline">Come farlo oggi? &rarr;</a>
+        </footer>
+    </section>
+
+    <!-- SLIDE 3: CHIARO (RIFLESSIONE PRATICA) -->
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-page text-txt border-b border-slate-200">
+        
+        <header class="flex justify-between items-center max-w-4xl mx-auto w-full border-b border-slate-200 pb-4">
+            <span class="font-mono text-xs md:text-sm font-semibold tracking-wider text-muted uppercase">
+                Riflessione Pratica
+            </span>
+            <span class="font-mono text-xs md:text-sm font-bold bg-slate-200 text-txt px-3 py-1 rounded-md">
+                03 / 04
+            </span>
+        </header>
+
+        <div class="my-auto max-w-3xl mx-auto w-full space-y-8 py-6">
+            
+            <div class="text-center space-y-2">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-txt tracking-tight">
+                    Qual è il tuo <span class="text-accent">passaggio di testimone</span>?
+                </h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-card p-6 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+                    <span class="font-mono text-xs font-bold bg-orange-100 text-accent px-3 py-1 rounded-md shrink-0 mt-0.5">01</span>
+                    <div>
+                        <h3 class="font-bold text-base md:text-lg text-txt">Condividere la conoscenza</h3>
+                    </div>
+                </div>
+
+                <div class="bg-card p-6 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+                    <span class="font-mono text-xs font-bold bg-orange-100 text-accent px-3 py-1 rounded-md shrink-0 mt-0.5">02</span>
+                    <div>
+                        <h3 class="font-bold text-base md:text-lg text-txt">Donare ascolto e tempo</h3>
+                    </div>
+                </div>
+
+                <div class="bg-card p-6 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+                    <span class="font-mono text-xs font-bold bg-orange-100 text-accent px-3 py-1 rounded-md shrink-0 mt-0.5">03</span>
+                    <div>
+                        <h3 class="font-bold text-base md:text-lg text-txt">Diffondere positività</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="flex justify-between items-center max-w-4xl mx-auto w-full pt-4 border-t border-slate-200">
+            <a href="#slide-2" class="text-xs md:text-sm font-bold text-muted hover:text-txt">&larr; Indietro</a>
+            <a href="#slide-4" class="text-xs md:text-sm font-bold text-accent hover:underline">Promessa</a>
+        </footer>
+    </section>
+
+    <!-- SLIDE 4: SFONDO SOFT / DIVERSO (PREGHIERA E SFIDA) -->
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pageAlt text-txt">
+        
+        <header class="flex justify-between items-center max-w-4xl mx-auto w-full border-b border-slate-300 pb-4">
+            <span class="font-mono text-xs md:text-sm font-semibold tracking-wider text-muted uppercase">
+                Promessa
+            </span>
+            <span class="font-mono text-xs md:text-sm font-bold bg-slate-300 text-txt px-3 py-1 rounded-md">
+                04 / 04
+            </span>
+        </header>
+
+        <div class="my-auto max-w-2xl mx-auto text-center space-y-8 w-full py-6">
+            
+            <div class="bg-card p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+                <span class="font-mono text-xs font-bold text-accent uppercase tracking-wider block">
+                    Preghiera del mattino
+                </span>
+                <p class="text-lg md:text-xl text-txt leading-relaxed font-semibold">
+                    Signore, ti ringraziamo per tutti i talenti e<br>le capacità che ci hai donato.<br><br>
+                    Liberaci dalla tentazione di tenerli solo per noi.<br>Insegnaci la gioia di far circolare il bene, mettendo il nostro tempo e le nostre qualità al servizio degli altri ogni giorno.<br>
+                    <strong class="text-accent block mt-3 font-extrabold text-2xl">Amen.</strong>
+                </p>
+            </div>
+
+        </div>
+
+        <footer class="flex justify-between items-center max-w-4xl mx-auto w-full pt-4 border-t border-slate-300">
+            <a href="#slide-3" class="text-xs md:text-sm font-bold text-muted hover:text-txt">&larr; Indietro</a>
+            <span class="text-xs md:text-sm font-bold text-accent uppercase">Buona Staffetta! ✨</span>
+        </footer>
+    </section>
+
+    <!-- Timer Logic -->
+    <script>
+        const TOTAL_TIME = 45;
+        let timeLeft = TOTAL_TIME;
+        let timerInterval = null;
+        let isRunning = false;
+
+        const timerDisplay = document.getElementById('timer-display');
+        const timerStatus = document.getElementById('timer-status');
+        const timerRing = document.getElementById('timer-ring');
+        const btnStart = document.getElementById('btn-start');
+
+        const totalDash = 263.89;
+
+        function updateDisplay() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            timerDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+            
+            const offset = totalDash - (timeLeft / TOTAL_TIME) * totalDash;
+            timerRing.style.strokeDashoffset = offset;
+        }
+
+        function toggleTimer() {
+            if (isRunning) {
+                clearInterval(timerInterval);
+                isRunning = false;
+                btnStart.textContent = 'Riprendi';
+                timerStatus.textContent = 'Pausa';
+            } else {
+                if (timeLeft === 0) resetTimer();
+                isRunning = true;
+                btnStart.textContent = 'Pausa';
+                timerStatus.textContent = 'In corso';
+
+                timerInterval = setInterval(() => {
+                    timeLeft--;
+                    updateDisplay();
+
+                    if (timeLeft <= 0) {
+                        clearInterval(timerInterval);
+                        isRunning = false;
+                        timerStatus.textContent = 'Finito!';
+                        btnStart.textContent = 'Riavvia';
+                    }
+                }, 1000);
+            }
+        }
+
+        function resetTimer() {
+            clearInterval(timerInterval);
+            isRunning = false;
+            timeLeft = TOTAL_TIME;
+            updateDisplay();
+            timerStatus.textContent = 'Pronto';
+            btnStart.textContent = 'Avvia';
+        }
+
+        updateDisplay();
+    </script>
+</body>
+</html>

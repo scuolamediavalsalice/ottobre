@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 14 ottobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#FAF7F2',
+                            dark: '#1C1917',
+                            muted: '#78716C',
+                            terracotta: '#D97706',
+                            rust: '#C2410C',
+                            peach: '#FEF3C7',
+                            card: '#FFFFFF',
+                            border: '#1C1917'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .pop-card {
+            border: 3px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #1C1917;
+        }
+        .pop-card-rust {
+            border: 3px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #C2410C;
+        }
+        .pop-card-amber {
+            border: 3px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #D97706;
+        }
+    </style>
+</head>
+<body class="bg-brand-bg text-brand-dark font-sans antialiased overflow-x-hidden">
+
+    <!-- SLIDE 1: DOMANDA INIZIALE -->
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-10 border-b-4 border-brand-dark relative">
+        
+        <!-- Header -->
+        <div class="flex justify-between items-center pb-4 border-b-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-brand-dark text-white px-3 py-1 rounded-md uppercase tracking-wider">
+                Scuola media Valsalice
+            </span>
+            <span class="bg-brand-peach text-brand-dark border-2 border-brand-dark px-3 py-1 rounded-md">
+                SLIDE 1/4
+            </span>
+        </div>
+
+        <!-- Contenuto -->
+        <div class="my-auto max-w-3xl mx-auto w-full text-center space-y-6">
+            
+           
+
+            <h1 class="text-3xl md:text-5xl font-black tracking-tight text-brand-dark leading-tight">
+                Chi c’è quando le cose <br>
+                <span class="bg-brand-rust text-white px-3 py-1 rounded-lg inline-block transform -rotate-1 mt-2 border-2 border-brand-dark">
+                    si complicano?
+                </span>
+            </h1>
+
+            <div class="bg-brand-card p-6 md:p-8 rounded-2xl pop-card text-left space-y-4">
+                <p class="text-base md:text-lg font-bold leading-relaxed">
+                    Non parliamo di chi fa grandi discorsi o gesti clamorosi. Parliamo di chi semplicemente <strong>c'è</strong>: chi prepara da mangiare, chi ti ascolta quando sei nervoso, chi risolve i problemi senza fare scenate.
+                </p>
+                <div class="p-4 bg-brand-peach/60 rounded-xl border-2 border-brand-dark font-mono text-xs md:text-sm font-bold text-brand-dark">
+                    👉 Non servono poteri speciali per fare la differenza. Serve pazienza.
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="hidden md:inline text-brand-muted">MAMMA MARGHERITA</span>
+            <a href="#slide-2" class="w-full md:w-auto text-center bg-brand-rust text-white px-6 py-3 rounded-xl hover:bg-brand-dark transition duration-200 pop-card font-black">
+                SCOPRI LA SUA STORIA &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 2: CHI ERA DAVVERO MAMMA MARGHERITA (CON LA TUA FOTO INTEGRATA) -->
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-10 border-b-4 border-brand-dark bg-brand-peach/30">
+        
+        <div class="flex justify-between items-center pb-4 border-b-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-brand-rust text-white px-3 py-1 rounded-md uppercase tracking-wider">LA STORIA REALE</span>
+            <span class="text-brand-muted">SLIDE 2/4</span>
+        </div>
+
+        <div class="my-auto max-w-5xl mx-auto w-full grid md:grid-cols-12 gap-8 items-center">
+            
+            <!-- Colonna Testo (7 colonne) -->
+            <div class="md:col-span-7 space-y-5">
+                <div class="inline-flex items-center gap-2 bg-brand-card border-2 border-brand-dark font-mono font-bold text-xs px-3 py-1 rounded-full text-brand-dark">
+                    👵‍🍳 VALDOCCO, 1846
+                </div>
+
+                <h2 class="text-3xl md:text-4xl font-black text-brand-dark leading-tight">
+                    Una donna semplice, <br>
+                    <span class="text-brand-rust">non una figurina.</span>
+                </h2>
+
+                <p class="text-sm md:text-base text-brand-muted font-medium leading-relaxed">
+                    Nel 1846 Mamma Margherita lascia la sua casa in campagna per andare a Torino da suo figlio Giovanni, diventando la "mamma" di centinaia di ragazzi di strada.
+                </p>
+
+                <!-- I 3 fatti concreti -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
+                    <div class="bg-brand-card p-3.5 rounded-xl border-2 border-brand-dark pop-card-amber">
+                        <div class="text-xl">🍲</div>
+                        <h4 class="font-extrabold text-sm text-brand-dark mt-1">Mani in pasta</h4>
+                        <p class="text-xs text-brand-muted font-medium mt-0.5">Minestre per chi non aveva casa.</p>
+                    </div>
+                    <div class="bg-brand-card p-3.5 rounded-xl border-2 border-brand-dark pop-card-rust">
+                        <div class="text-xl">🧵</div>
+                        <h4 class="font-extrabold text-sm text-brand-dark mt-1">Ago e filo</h4>
+                        <p class="text-xs text-brand-muted font-medium mt-0.5">Rammendare e ascoltare.</p>
+                    </div>
+                    <div class="bg-brand-card p-3.5 rounded-xl border-2 border-brand-dark pop-card">
+                        <div class="text-xl">🏡</div>
+                        <h4 class="font-extrabold text-sm text-brand-dark mt-1">Creare casa</h4>
+                        <p class="text-xs text-brand-muted font-medium mt-0.5">Far sentire ognuno accolto.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colonna Immagine Originale (5 colonne) -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-xs md:max-w-none bg-brand-card p-2 rounded-2xl pop-card-rust">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Mamamargarita.jpg?utm_source=it.wikipedia.org&utm_campaign=index&utm_content=original" 
+                         alt="Mamma Margherita" 
+                         class="rounded-xl w-full h-auto max-h-80 md:max-h-96 object-contain mx-auto">
+                    <div class="mt-2 bg-brand-peach p-2 rounded-lg border border-brand-dark text-center">
+                        <span class="font-mono text-xs font-bold text-brand-dark block">
+                            Mamma Margherita
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-1" class="text-brand-muted hover:text-brand-dark">&larr; INDIETRO</a>
+            <a href="#slide-3" class="bg-brand-dark text-white px-5 py-2.5 rounded-xl hover:bg-brand-rust transition font-black">
+                LA SEMPLICITà &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: ATTUALIZZAZIONE -->
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-10 border-b-4 border-brand-dark">
+        
+        <div class="flex justify-between items-center pb-4 border-b-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-brand-terracotta text-white px-3 py-1 rounded-md uppercase tracking-wider">RIFLESSIONE</span>
+            <span class="text-brand-muted">SLIDE 3/4</span>
+        </div>
+
+        <div class="my-auto max-w-3xl mx-auto w-full space-y-6">
+            
+            <h2 class="text-2xl md:text-4xl font-black text-brand-dark text-center">
+                La forza delle piccole cose quotidiane
+            </h2>
+
+            <div class="bg-brand-card p-6 rounded-2xl pop-card space-y-4">
+                <p class="text-sm md:text-base font-semibold leading-relaxed text-brand-dark">
+                    Spesso pensiamo che per lasciare il segno o fare del bene si debbano fare cose straordinarie. Mamma Margherita ci insegna il contrario:
+                </p>
+
+                <ul class="space-y-3 font-medium text-xs md:text-sm">
+                    <li class="flex items-start gap-3 bg-brand-peach/40 p-3 rounded-lg border border-brand-dark">
+                        <span>🔹</span>
+                        <span><strong>Fare la propria parte senza clamore:</strong> un gesto di rispetto o un aiuto dato in silenzio vale più di mille parole.</span>
+                    </li>
+                    <li class="flex items-start gap-3 bg-brand-peach/40 p-3 rounded-lg border border-brand-dark">
+                        <span>🔹</span>
+                        <span><strong>Saper accogliere i difetti altrui:</strong> i ragazzi a Valdocco non erano angeli, ma Margherita ha scelto la pazienza.</span>
+                    </li>
+                    <li class="flex items-start gap-3 bg-brand-peach/40 p-3 rounded-lg border border-brand-dark">
+                        <span>🔹</span>
+                        <span><strong>Esserci:</strong> a volte la cosa più grande che puoi fare per un compagno è semplicemente non lasciarlo solo.</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-2" class="text-brand-muted hover:text-brand-dark">&larr; INDIETRO</a>
+            <a href="#slide-4" class="bg-brand-rust text-white px-5 py-2.5 rounded-xl hover:bg-brand-dark transition font-black">
+                PREGHIERA E IMPEGNO &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: PREGHIERA E PICCOLO IMPEGNO -->
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-10 bg-brand-peach/20">
+        
+        <div class="flex justify-between items-center pb-4 border-b-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-brand-dark text-white px-3 py-1 rounded-md uppercase tracking-wider">PREGHIERA</span>
+            <span class="text-brand-muted">SLIDE 4/4</span>
+        </div>
+
+        <div class="my-auto max-w-3xl mx-auto text-center space-y-6 w-full">
+            
+            <div class="inline-flex items-center gap-2 bg-brand-card border-2 border-brand-dark font-mono font-bold text-xs px-4 py-1.5 rounded-full">
+                🙏 PREGHIERA DEL MATTINO
+            </div>
+
+            <!-- Box Preghiera -->
+            <div class="bg-brand-card p-6 md:p-8 rounded-2xl pop-card text-left md:text-center space-y-4">
+                <p class="text-base md:text-lg font-bold text-brand-dark leading-relaxed">
+                    Signore, ti ringraziamo per la vita e l'esempio di Mamma Margherita.<br><br>
+                    Insegnaci il valore della semplicità e della pazienza. Aiutaci a prenderci cura delle persone che abbiamo accanto ogni giorno, con gesti concreti e senza cercare applausi. <br> <br> Amen.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-3" class="text-brand-muted hover:text-brand-dark">&larr; INDIETRO</a>
+            <span class="text-brand-rust uppercase font-black">BUON GIORNO E BUON LAVORO! ✨</span>
+        </div>
+    </section>
+
+</body>
+</html>

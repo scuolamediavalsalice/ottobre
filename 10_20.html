@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 20 Ottobre - Il Perdono Come Dedizione Suprema</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mission: {
+                            orange: '#EA580C',   /* Arancio Missionario Intenso */
+                            bright: '#F97316',   /* Arancio Vivo */
+                            red: '#DC2626',      /* Rosso Fuoco / Terra */
+                            amber: '#F59E0B',    /* Ambra Caldo */
+                            cream: '#FFFBEB',    /* Sfondo Crema Caldo */
+                            peach: '#FFEDD5',    /* Pesca Chiaro Fill */
+                            dark: '#1C1917',     /* Antracite Ad Alto Contrasto */
+                            light: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+
+        /* POP MINIMAL FLAT SHADOWS */
+        .pop-minimal-dark {
+            border: 4px solid #1C1917;
+            box-shadow: 8px 8px 0px 0px #1C1917;
+        }
+        .pop-minimal-orange {
+            border: 4px solid #1C1917;
+            box-shadow: 8px 8px 0px 0px #EA580C;
+        }
+        .pop-minimal-red {
+            border: 4px solid #1C1917;
+            box-shadow: 8px 8px 0px 0px #DC2626;
+        }
+    </style>
+</head>
+<body class="bg-white text-mission-dark font-sans antialiased overflow-x-hidden selection:bg-mission-orange selection:text-white">
+
+    <!-- ================= SLIDE 1: ATTIVITÀ LAMPO "MATITA E GOMMA" ================= -->
+    <section id="slide-1" class="min-h-screen w-full relative flex items-center justify-center p-6 md:p-12 bg-mission-peach border-b-8 border-mission-dark">
+
+        <!-- LATO SINISTRO (In Alto e In Basso a SX) -->
+        <div class="absolute left-4 md:left-8 top-6 bottom-6 flex flex-col justify-between items-start font-mono text-xs md:text-sm font-black z-10 pointer-events-none">
+            <span class="bg-mission-dark text-mission-cream px-3 py-1.5 border-2 border-mission-dark uppercase pointer-events-auto">
+                SCUOLA MEDIA VALSALICE
+            </span>
+            <span class="text-mission-orange font-black tracking-wider hidden sm:block pointer-events-auto">
+                #AZIONELAMPO
+            </span>
+        </div>
+
+        <!-- LATO DESTRO (In Alto e In Basso a DX) -->
+        <div class="absolute right-4 md:right-8 top-6 bottom-6 flex flex-col justify-between items-end font-mono text-xs md:text-sm font-black z-10">
+            <span class="bg-mission-orange text-white px-3 py-1.5 border-2 border-mission-dark uppercase">
+                MARTEDÌ 20 OTTOBRE
+            </span>
+            <a href="#slide-2" class="bg-mission-dark text-white px-4 py-2 hover:bg-mission-red transition border-2 border-mission-dark font-black flex items-center gap-2 uppercase">
+                1. TEMA &darr;
+            </a>
+        </div>
+
+        <!-- CONTENUTO CENTRALE SLIDE 1 -->
+        <div class="my-auto max-w-2xl mx-auto w-full space-y-6 px-4 md:px-8 text-center">
+
+            <div class="space-y-2">
+                <span class="bg-white text-mission-dark font-mono font-black text-xs px-4 py-1.5 rounded-full border-2 border-mission-dark uppercase tracking-widest inline-block">
+                    ✏️ ATTIVITÀ EXPRESS AL BANCO
+                </span>
+                <h2 class="text-3xl md:text-5xl font-black text-mission-dark uppercase tracking-tight">
+                    PRENDI MATITA<br>E GOMMA!
+                </h2>
+            </div>
+
+            <!-- Card minimal -->
+            <div class="bg-white border-4 border-mission-dark rounded-3xl p-6 md:p-8 pop-minimal-dark space-y-6 text-left">
+                
+                <!-- Step 1 -->
+                <div class="flex items-start gap-4">
+                    <span class="bg-mission-orange text-white font-mono font-black text-lg px-3.5 py-1 rounded-xl border-2 border-mission-dark shrink-0">
+                        1
+                    </span>
+                    <div class="space-y-1">
+                        <h4 class="font-black text-lg md:text-xl text-mission-dark uppercase">SCRIVI</h4>
+                        <p class="text-sm md:text-base font-bold text-gray-700 leading-snug">
+                            Apri il quaderno e scrivi a matita un piccolo torto o un motivo di risentimento che hai subito di recente da qualcuno.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border-b-2 border-dashed border-gray-300"></div>
+
+                <!-- Step 2 -->
+                <div class="flex items-start gap-4">
+                    <span class="bg-mission-red text-white font-mono font-black text-lg px-3.5 py-1 rounded-xl border-2 border-mission-dark shrink-0">
+                        2
+                    </span>
+                    <div class="space-y-1">
+                        <h4 class="font-black text-lg md:text-xl text-mission-dark uppercase">CANCELLA</h4>
+                        <p class="text-sm md:text-base font-bold text-gray-700 leading-snug">
+                            Passa la gomma sopra la scritta fino a quando il foglio non torna pulito. Guarda il segno che scompare.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SLIDE 2: HERO POP-MINIMAL (TEMA E FOCUS) ================= -->
+    <section id="slide-2" class="min-h-screen w-full relative flex items-center justify-center p-6 md:p-12 bg-white border-b-8 border-mission-orange">
+
+        <!-- LATO SINISTRO -->
+        <div class="absolute left-4 md:left-8 top-6 bottom-6 flex flex-col justify-between items-start font-mono text-xs md:text-sm font-bold z-10">
+            <span class="bg-mission-orange text-white px-3 py-1.5 border-2 border-mission-dark font-black uppercase">
+                // IL TEMA DEL GIORNO
+            </span>
+            <a href="#slide-1" class="text-mission-dark font-black hover:underline uppercase">
+                &larr; INDIETRO
+            </a>
+        </div>
+
+        <!-- LATO DESTRO -->
+        <div class="absolute right-4 md:right-8 top-6 bottom-6 flex flex-col justify-between items-end font-mono text-xs md:text-sm font-bold z-10">
+            <span class="bg-mission-dark text-mission-amber px-3 py-1.5 border-2 border-mission-dark font-black">
+                SLIDE 2 / 4
+            </span>
+            <a href="#slide-3" class="bg-mission-orange text-white px-4 py-2 border-2 border-mission-dark font-black hover:bg-mission-red transition uppercase">
+                2. IL GESTO &darr;
+            </a>
+        </div>
+
+        <!-- CONTENUTO CENTRALE SLIDE 2 -->
+        <div class="my-auto max-w-2xl mx-auto w-full px-4 md:px-8">
+            <div class="bg-mission-cream p-8 md:p-10 rounded-3xl pop-minimal-dark text-center flex flex-col items-center space-y-6">
+                
+                <span class="inline-block bg-mission-dark text-mission-amber font-mono font-black text-xs md:text-sm px-4 py-1.5 rounded-full uppercase tracking-widest border-2 border-mission-dark">
+                    🕊️ OTTOBRE MISSIONARIO // LA DEDIZIONE
+                </span>
+
+                <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight leading-none">
+                    IL PERDONO COME <br>
+                    <span class="bg-mission-orange text-white px-4 py-1 inline-block border-3 border-mission-dark my-2 transform -rotate-1">
+                        DEDIZIONE SUPREMA
+                    </span>
+                </h1>
+
+                <p class="text-base md:text-xl font-bold leading-relaxed text-mission-dark max-w-xl">
+                    Dedicarsi agli altri non significa solo fare cose belle insieme, ma saper <strong>ricostruire i ponti</strong> quando qualcuno ci ferisce.
+                </p>
+
+                <div class="pt-2">
+                    <span class="bg-mission-red text-white font-mono text-xs md:text-sm font-black px-5 py-2.5 rounded-xl border-2 border-mission-dark inline-block uppercase">
+                        🧹 COME LA GOMMA SUL QUADERNO: CANCELLARE IL RANCORE!
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ================= SLIDE 3: LA RIFLESSIONE (IL GESTO DI GESÙ) ================= -->
+    <section id="slide-3" class="min-h-screen w-full relative flex items-center justify-center p-6 md:p-12 bg-white border-b-8 border-mission-red">
+
+        <!-- LATO SINISTRO -->
+        <div class="absolute left-4 md:left-8 top-6 bottom-6 flex flex-col justify-between items-start font-mono text-xs md:text-sm font-bold z-10">
+            <span class="bg-mission-red text-white px-3 py-1.5 border-2 border-mission-dark font-black uppercase">
+                // INQUADRAMENTO CARISMATICO
+            </span>
+            <a href="#slide-2" class="text-mission-dark font-black hover:underline uppercase">
+                &larr; INDIETRO
+            </a>
+        </div>
+
+        <!-- LATO DESTRO -->
+        <div class="absolute right-4 md:right-8 top-6 bottom-6 flex flex-col justify-between items-end font-mono text-xs md:text-sm font-bold z-10">
+            <span class="text-mission-orange font-black">
+                SLIDE 3 / 4
+            </span>
+            <a href="#slide-4" class="bg-mission-orange text-white px-4 py-2 border-2 border-mission-dark font-black hover:bg-mission-red transition uppercase">
+                3. L'IMPEGNO &darr;
+            </a>
+        </div>
+
+        <!-- CONTENUTO CENTRALE SLIDE 3 -->
+        <div class="my-auto max-w-2xl mx-auto w-full space-y-6 px-4 md:px-8 text-center">
+
+            <div class="space-y-2">
+                <span class="bg-mission-amber text-mission-dark font-mono font-black text-xs px-4 py-1.5 border-2 border-mission-dark uppercase tracking-widest inline-block">
+                    🧼 L'ESEMPIO DI GESÙ
+                </span>
+                <h2 class="text-3xl md:text-5xl font-black text-mission-dark uppercase tracking-tight">
+                    LAVARE I PIEDI <br>
+                    <span class="text-mission-red">ANCHE A GIUDA</span>
+                </h2>
+            </div>
+
+            <!-- Card Spiegazione -->
+            <div class="bg-mission-dark text-white p-6 md:p-8 rounded-3xl pop-minimal-red space-y-5 text-left">
+                
+                <p class="text-lg md:text-3xl font-black leading-relaxed text-mission-amber">
+                    Il perdono non cancella il passato,<br>ma libera il tuo futuro.
+                </p>
+
+                <p class="text-sm md:text-lg font-medium text-gray-200 leading-relaxed">
+                    Gesù ha lavato i piedi a tutti i suoi discepoli, compreso Giuda, pur sapendo che lo avrebbe tradito. Perdonare significa rifiutare di far marcire il cuore nel rancore e avere il coraggio di ricostruire i ponti.
+                </p>
+
+                <div class="p-4 bg-white/10 rounded-2xl border-2 border-white/20 font-mono text-xs md:text-sm text-center font-bold text-mission-cream">
+                    🕊️ Perdonare non vuol dire essere deboli, ma essere abbastanza forti da ricominciare!
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SLIDE 4: IMPEGNO & PREGHIERA ================= -->
+    <section id="slide-4" class="min-h-screen w-full relative flex items-center justify-center p-6 md:p-12 bg-mission-amber text-mission-dark">
+
+        <!-- LATO SINISTRO -->
+        <div class="absolute left-4 md:left-8 top-6 bottom-6 flex flex-col justify-between items-start font-mono text-xs md:text-sm font-bold z-10">
+            <span class="bg-mission-dark text-mission-amber px-3 py-1.5 border-2 border-mission-dark font-black uppercase">
+                // 03 IMPEGNO PRATICO
+            </span>
+            <a href="#slide-3" class="text-mission-dark font-black hover:underline uppercase">
+                &larr; INDIETRO
+            </a>
+        </div>
+
+        <!-- LATO DESTRO -->
+        <div class="absolute right-4 md:right-8 top-6 bottom-6 flex flex-col justify-between items-end font-mono text-xs md:text-sm font-bold z-10">
+            <span class="bg-mission-red text-white px-3 py-1.5 border-2 border-mission-dark font-black uppercase">
+                SLIDE 4 / 4
+            </span>
+            <span class="bg-mission-dark text-mission-amber px-3 py-1.5 border-2 border-mission-dark uppercase font-black">
+                BUON MARTEDÌ!
+            </span>
+        </div>
+
+        <!-- CONTENUTO CENTRALE SLIDE 4 -->
+        <div class="my-auto max-w-2xl mx-auto text-center space-y-6 w-full px-4 md:px-8">
+
+            <!-- Commitment Box -->
+            <div class="bg-white text-mission-dark p-6 md:p-8 rounded-3xl pop-minimal-dark space-y-3">
+                
+                <span class="bg-mission-orange text-white font-mono font-black text-xs px-3 py-1 border border-mission-dark rounded uppercase inline-block">
+                    🚀 LA TUA MISSIONE DI OGGI
+                </span>
+                
+                <blockquote class="text-xl md:text-2xl font-black leading-snug uppercase text-mission-dark">
+                    «Fai il primo passo per chiarire un piccolo litigio o un risentimento.»
+                </blockquote>
+            </div>
+
+            <!-- Prayer Box Minimal -->
+            <div class="bg-mission-dark text-white p-6 md:p-8 rounded-3xl pop-minimal-orange space-y-3">
+                <div class="inline-block bg-mission-red text-white font-mono font-black text-xs px-3 py-1 rounded uppercase border border-white">
+                    🙏 PREGHIERA DEL MARTEDÌ
+                </div>
+                <p class="text-sm md:text-lg font-bold leading-relaxed italic text-mission-cream">
+                    Signore, donaci la forza di perdonare e di non portare rancore. <br>
+                    Aiutaci a fare sempre il primo passo verso gli altri per costruire la pace in classe e nelle nostre famiglie. Amen.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

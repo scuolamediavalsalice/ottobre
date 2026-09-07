@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 1° ottobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        theme: {
+                            orange: '#EA580C',    /* Arancio Vivace */
+                            brightOrange: '#F97316', /* Arancio Chiaro */
+                            red: '#DC2626',       /* Rosso Fuoco */
+                            darkRed: '#991B1B',   /* Rosso Scuro */
+                            amber: '#F59E0B',     /* Ambra / Warm Yellow */
+                            cream: '#FFFBEB',     /* Crema Caldo */
+                            peach: '#FFEDD5',     /* Pesca */
+                            dark: '#1C1917',      /* Antracite Ad Alto Contrasto */
+                            cardBg: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'monospace'],
+                        sans: ['Trebuchet MS', 'Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .pop-shadow {
+            box-shadow: 6px 6px 0px 0px #1C1917;
+        }
+        .pop-shadow-orange {
+            box-shadow: 6px 6px 0px 0px #EA580C;
+        }
+        .pop-shadow-red {
+            box-shadow: 6px 6px 0px 0px #DC2626;
+        }
+        .pop-shadow-amber {
+            box-shadow: 6px 6px 0px 0px #F59E0B;
+        }
+        .street-border {
+            border: 3.5px solid #1C1917;
+        }
+    </style>
+</head>
+<body class="bg-theme-cream text-theme-dark font-sans antialiased overflow-x-hidden selection:bg-theme-orange selection:text-white">
+
+    <!-- ================= SLIDE 1: INPUT & DOMANDA (Riflessione Iniziale) ================= -->
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-theme-peach border-b-8 border-theme-dark relative overflow-hidden">
+        
+        <!-- Header Banner -->
+        <div class="flex justify-between items-center border-b-4 border-theme-dark pb-4 font-mono text-xs md:text-sm font-black">
+            <span class="bg-theme-dark text-theme-cream px-3 py-1 uppercase tracking-widest street-border">
+                SCUOLA MEDIA VALSALICE
+            </span>
+            <span class="bg-theme-orange text-white street-border px-3 py-1 tracking-widest uppercase shadow-[3px_3px_0px_0px_#1C1917]">
+                GIOVEDÌ 1 OTTOBRE
+            </span>
+        </div>
+
+        <!-- Main Input Content -->
+        <div class="my-auto max-w-4xl mx-auto text-center space-y-6">
+            
+            <div class="inline-block bg-theme-red text-white font-mono font-black text-xs md:text-sm px-4 py-1.5 uppercase street-border pop-shadow rotate-1">
+                🔥 STIMOLO INIZIALE
+            </div>
+
+            <h1 class="text-4xl md:text-7xl font-black uppercase tracking-tight leading-none text-theme-dark">
+                COSA È PER TE <br>
+                <span class="bg-theme-orange text-white px-4 py-1 street-border inline-block -rotate-2 mt-2 shadow-[6px_6px_0px_0px_#1C1917]">
+                    LA DEDIZIONE?
+                </span>
+            </h1>
+
+                </div>
+
+           
+
+        <!-- Bottom Controls -->
+        <div class="flex justify-between items-center pt-4 border-t-4 border-theme-dark font-mono text-xs font-bold">
+            <span class="hidden md:inline text-theme-dark font-black">METTICI IL CUORE 🚀</span>
+            <a href="#slide-2" class="w-full md:w-auto text-center bg-theme-dark text-white px-6 py-3 hover:bg-theme-red transition uppercase street-border pop-shadow-orange">
+                1. RIFLESSIONE COLLETTIVA &darr;
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ================= SLIDE 2: SPIEGAZIONE & RIFLESSIONE COLLET TIVA ================= -->
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-white text-theme-dark border-b-8 border-theme-orange">
+        
+        <div class="flex justify-between items-center border-b-4 border-theme-dark pb-4 font-mono text-xs font-bold">
+            <span class="bg-theme-orange text-white px-3 py-1 uppercase tracking-wider street-border">// 01 RIFLESSIONE DI CLASSE</span>
+            <span class="bg-theme-cream text-theme-dark px-3 py-1 border-2 border-theme-dark font-black">Slide 2 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-5xl mx-auto grid md:grid-cols-12 gap-8 items-stretch w-full">
+            
+            <!-- Testo Spiegazione -->
+            <div class="md:col-span-6 space-y-6 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <span class="bg-theme-amber text-theme-dark font-mono font-black text-xs px-3 py-1 uppercase street-border inline-block">
+                        ⚡ PASSIONE VS DOVERE
+                    </span>
+                    
+                    <h2 class="text-3xl md:text-5xl font-black uppercase leading-tight">
+                        OLTRE IL <br>
+                        <span class="bg-theme-red text-white px-3 py-1 street-border inline-block rotate-1 my-1">
+                            SEMPLICE DOVERE
+                        </span>
+                    </h2>
+
+                    <p class="text-base md:text-lg font-medium text-gray-800 leading-relaxed">
+                        Dedicarsi a qualcosa o a qualcuno significa decidere liberamente di metterci l'anima. Non è un peso o uno sforzo vano, ma una scelta attiva che trasforma la fatica in valore.
+                    </p>
+                </div>
+
+                <div class="p-5 bg-theme-peach street-border pop-shadow-orange space-y-2">
+                    <span class="font-mono font-black text-theme-orange text-xs uppercase block">💡 CONCETTO CHIAVE</span>
+                    <p class="font-bold text-sm md:text-base text-theme-dark">
+                        La dedizione è la differenza tra fare le cose tanto per farle e farle per lasciare un segno.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Box Domande Collettive per la Classe -->
+            <div class="md:col-span-6 bg-theme-cream p-6 md:p-8 rounded-2xl street-border pop-shadow-red flex flex-col justify-between space-y-6">
+                
+                <div>
+                    <span class="bg-theme-dark text-white font-mono font-black text-xs px-3 py-1 uppercase street-border inline-block mb-4">
+                        🗣️ CONFRONTO IN CLASSE
+                    </span>
+                    <h3 class="text-xl md:text-2xl font-black uppercase text-theme-dark mb-4">
+                        Parliamone insieme:
+                    </h3>
+
+                    <div class="space-y-4 font-mono text-xs md:text-sm">
+                        <div class="p-4 bg-white street-border border-l-8 border-l-theme-orange space-y-1">
+                            <span class="font-black text-theme-orange uppercase">DOMANDA 1:</span>
+                            <p class="font-bold text-gray-800">In quale attività (studio, sport, musica, amicizia) senti di mettere vera dedizione?</p>
+                        </div>
+
+                        <div class="p-4 bg-white street-border border-l-8 border-l-theme-red space-y-1">
+                            <span class="font-black text-theme-red uppercase">DOMANDA 2:</span>
+                            <p class="font-bold text-gray-800">Cosa ti aiuta a non mollare quando la fatica si fa sentire?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-3 bg-theme-amber text-theme-dark street-border font-mono text-xs font-black text-center uppercase">
+                    💬 Condividete una risposta con i compagni!
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-4 border-theme-dark font-mono text-xs font-bold">
+            <a href="#slide-1" class="text-gray-600 hover:text-theme-dark">&larr; INDIETRO</a>
+            <a href="#slide-3" class="bg-theme-dark text-white px-4 py-2 hover:bg-theme-red transition uppercase street-border">
+                2. LA FRASE SULLA CARITÀ &darr;
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ================= SLIDE 3: LA FRASE SULLA CARITÀ ================= -->
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-theme-peach text-theme-dark border-b-8 border-theme-red">
+        
+        <div class="flex justify-between items-center border-b-4 border-theme-dark pb-4 font-mono text-xs font-bold">
+            <span class="bg-theme-red text-white px-3 py-1 uppercase tracking-wider street-border">// 02 IL VALORE SALESIANO</span>
+            <span class="bg-white text-theme-dark px-3 py-1 border-2 border-theme-dark font-black">Slide 3 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-4xl mx-auto w-full space-y-8 text-center">
+<br> <br>             <div class="bg-white p-8 md:p-12 rounded-3xl street-border pop-shadow-red space-y-6 text-center">
+                
+                <span class="text-4xl md:text-6xl block">“</span>
+
+                <blockquote class="text-3xl md:text-5xl font-black uppercase leading-tight text-theme-dark tracking-tight">
+                    INCULCATE LA CARITÀ: <br>
+                    <span class="bg-theme-amber text-theme-dark px-3 py-1 street-border inline-block my-2 transform -rotate-1 shadow-[4px_4px_0px_0px_#1C1917]">
+                        IL BENE DI UNO
+                    </span> <br>
+                    SIA IL BENE DI TUTTI.
+                </blockquote>
+
+                <div class="pt-4 border-t-2 border-dashed border-gray-300">                </div>
+
+            </div>
+
+            <div class="max-w-2xl mx-auto bg-theme-dark text-white p-5 rounded-2xl street-border font-mono text-xs md:text-sm font-bold text-center">
+                🤝 La vera dedizione non guarda solo al proprio successo, ma costruisce il bene dell'intera comunità.
+            </div>
+<br> <br>
+
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-4 border-theme-dark font-mono text-xs font-bold">
+            <a href="#slide-2" class="text-gray-600 hover:text-theme-dark">&larr; INDIETRO</a>
+            <a href="#slide-4" class="bg-theme-dark text-white px-4 py-2 hover:bg-theme-orange transition uppercase street-border">
+                3. POST-IT SPECIALE &darr;
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ================= SLIDE 4: POST-IT SPECIALE (Sfida Pratica con Timer) ================= -->
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-theme-amber text-theme-dark">
+        
+        <div class="flex justify-between items-center border-b-4 border-theme-dark pb-4 font-mono text-xs font-bold">
+            <span class="bg-theme-dark text-white px-3 py-1 uppercase tracking-wider street-border">// 03 AZIONE PRATICA</span>
+            <span class="bg-white text-theme-dark px-3 py-1 border-2 border-theme-dark font-black">Slide 4 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-5xl mx-auto w-full grid md:grid-cols-12 gap-8 items-center">
+            
+            <!-- Istruzioni Sfida Post-it -->
+            <div class="md:col-span-6 space-y-6">
+                <div class="inline-flex items-center gap-2 bg-white text-theme-dark px-3 py-1 street-border font-mono font-black text-xs uppercase">
+                    📝 SFIDA DEL GIORNO
+                </div>
+
+                <h2 class="text-4xl md:text-5xl font-black uppercase leading-none">
+                    IL TUO POST-IT <br>
+                    <span class="bg-theme-red text-white px-3 py-1 inline-block street-border -rotate-1 mt-2 shadow-[4px_4px_0px_0px_#1C1917]">
+                        SPECIALE
+                    </span>
+                </h2>
+
+                <div class="space-y-3 font-mono text-xs md:text-sm font-bold">
+                    <div class="p-4 bg-white street-border pop-shadow flex items-start gap-3">
+                        <span class="w-8 h-8 rounded-full bg-theme-orange text-white flex items-center justify-center font-black flex-shrink-0 street-border">1</span>
+                        <span>Prendi un <strong>post-it</strong> o un foglietto di carta.</span>
+                    </div>
+                    <div class="p-4 bg-white street-border pop-shadow flex items-start gap-3">
+                        <span class="w-8 h-8 rounded-full bg-theme-red text-white flex items-center justify-center font-black flex-shrink-0 street-border">2</span>
+                        <span>Scrivi <strong>una cosa</strong> o <strong>una persona</strong> a cui vuoi dedicare del tempo speciale oggi.</span>
+                    </div>
+                    <div class="p-4 bg-theme-peach street-border pop-shadow flex items-start gap-3">
+                        <span class="w-8 h-8 rounded-full bg-theme-dark text-white flex items-center justify-center font-black flex-shrink-0 street-border">3</span>
+                        <span>Attaccalo sul diario o sul banco come promemoria!</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timer Interattivo -->
+            <div class="md:col-span-6 bg-white p-6 md:p-8 rounded-2xl street-border pop-shadow-red text-center space-y-6">
+                <div class="flex items-center justify-between font-mono text-xs font-black uppercase text-gray-500 border-b-2 border-gray-100 pb-2">
+                    <span>⏱️ TIMER ATTIVITÀ</span>
+                    <span class="text-theme-red">90 SECONDI</span>
+                </div>
+
+                <div class="bg-theme-dark p-6 md:p-8 rounded-xl border-4 border-theme-dark text-white">
+                    <div id="action-timer" class="text-5xl md:text-7xl font-mono font-black text-theme-amber tracking-wider">
+                        01:30
+                    </div>
+                    <span id="timer-status" class="text-xs font-mono text-gray-300 block mt-3 uppercase tracking-widest">
+                        Pronti? Clicca il pulsante e scrivi!
+                    </span>
+                </div>
+
+                <button onclick="startActionTimer()" id="timer-btn" class="w-full py-4 bg-theme-orange text-white font-mono font-black text-sm uppercase tracking-widest hover:bg-theme-red transition transform active:scale-95 street-border pop-shadow">
+                    ▶ AVVIA CRONOMETRO (90s)
+                </button>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-4 border-theme-dark font-mono text-xs font-bold">
+            <a href="#slide-3" class="text-gray-700 hover:text-theme-dark">&larr; INDIETRO</a>
+            <span class="text-theme-dark font-black text-xs md:text-sm uppercase bg-white px-3 py-1 street-border">
+                BUON GIOVEDÌ 1° OTTOBRE! METTICI IL CUORE! 🚀
+            </span>
+        </div>
+    </section>
+
+    <!-- SCRIPT TIMER INTERATTIVO -->
+    <script>
+        let duration = 90;
+        let timer = null;
+
+        function startActionTimer() {
+            const btn = document.getElementById('timer-btn');
+            const display = document.getElementById('action-timer');
+            const status = document.getElementById('timer-status');
+
+            btn.disabled = true;
+            btn.classList.add('opacity-50', 'cursor-not-allowed');
+
+            timer = setInterval(() => {
+                duration--;
+                
+                let mins = Math.floor(duration / 60);
+                let secs = duration % 60;
+                
+                let formattedMins = mins < 10 ? '0' + mins : mins;
+                let formattedSecs = secs < 10 ? '0' + secs : secs;
+                
+                display.textContent = `${formattedMins}:${formattedSecs}`;
+
+                if (duration === 45) {
+                    status.textContent = "✍️ ORA SCRIVI SUL POST-IT E ATTACCALO!";
+                    display.classList.remove('text-theme-amber');
+                    display.classList.add('text-theme-orange');
+                }
+
+                if (duration <= 0) {
+                    clearInterval(timer);
+                    display.textContent = "TEMPO SCADUTO!";
+                    display.classList.remove('text-theme-orange');
+                    display.classList.add('text-theme-red');
+                    status.textContent = "✅ FANTASTICO! OGGI DEDICA IL TUO TEMPO!";
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

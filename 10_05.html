@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 5 ottobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pop: {
+                            bg: '#FDFBF7',        /* Warm Canvas White */
+                            dark: '#0F172A',      /* Deep Slate Black */
+                            orange: '#FF5722',    /* Mission Orange */
+                            red: '#E11D48',       /* Vibrant Red */
+                            yellow: '#FACC15',    /* Golden Yellow */
+                            emerald: '#10B981'    /* Action Emerald */
+                        }
+                    },
+                    fontFamily: {
+                        mono: ['ui-monospace', 'monospace'],
+                        sans: ['Trebuchet MS', 'Arial Black', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .pop-shadow-orange {
+            box-shadow: 6px 6px 0px 0px #FF5722;
+        }
+        .pop-shadow-red {
+            box-shadow: 6px 6px 0px 0px #E11D48;
+        }
+        .pop-shadow-dark {
+            box-shadow: 6px 6px 0px 0px #0F172A;
+        }
+        .pop-shadow-emerald {
+            box-shadow: 6px 6px 0px 0px #10B981;
+        }
+        .street-border {
+            border: 3.5px solid #0F172A;
+        }
+    </style>
+</head>
+<body class="bg-pop-bg text-pop-dark font-sans antialiased overflow-x-hidden selection:bg-pop-orange selection:text-white">
+
+    <!-- ================= SLIDE 1: ESPERIMENTO PRATICO IMMEDIATO ================= -->
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-orange text-white border-b-8 border-pop-dark relative">
+        
+        <!-- Header Minimal -->
+        <div class="flex justify-between items-center border-b-4 border-white pb-4 font-mono text-xs md:text-sm font-black">
+            <span class="bg-pop-dark text-white px-3 py-1 uppercase tracking-widest street-border">
+                SCUOLA MEDIA VALSALICE
+            </span>
+            <span class="bg-pop-yellow text-pop-dark px-3 py-1 tracking-widest uppercase street-border">
+                LUNEDÌ 5 OTTOBRE
+            </span>
+        </div>
+
+        <!-- Main Experiential Grid -->
+        <div class="my-auto max-w-6xl mx-auto w-full grid md:grid-cols-12 gap-8 items-center">
+            
+            <!-- Testo Introduttivo -->
+            <div class="md:col-span-6 space-y-6 text-left">
+                <div class="inline-block bg-pop-red text-white font-mono font-black text-xs px-3 py-1 uppercase street-border rotate-1">
+                    ⏱️ ESPERIMENTO DI 30 SECONDI
+                </div>
+
+                <h1 class="text-4xl md:text-6xl font-black uppercase leading-none text-white">
+                                        <span class="bg-pop-yellow text-pop-dark px-3 street-border inline-block -rotate-1 my-1">STRINGI I PUGNI</span>
+                </h1>
+
+                <div class="space-y-3 font-mono text-xs md:text-sm text-pop-dark">
+                    <div class="p-4 bg-white street-border pop-shadow-dark rounded-xl flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-full bg-pop-red text-white font-black flex items-center justify-center flex-shrink-0 street-border">1</span>
+                        <span class="font-bold">Quando parte il timer, <strong>stringi i pugni più forte che puoi</strong> per 30 secondi.</span>
+                    </div>
+                    <div class="p-4 bg-white street-border pop-shadow-dark rounded-xl flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-full bg-pop-emerald text-white font-black flex items-center justify-center flex-shrink-0 street-border">2</span>
+                        <span class="font-bold">Al segnale, <strong>apri le mani</strong> e ascolta la sensazione.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timer Box Interattivo -->
+            <div class="md:col-span-6 bg-white text-pop-dark p-6 md:p-8 rounded-2xl street-border pop-shadow-dark text-center space-y-6">
+                <span id="phase-badge" class="font-mono font-black text-xs uppercase tracking-widest bg-pop-yellow text-pop-dark px-3 py-1 street-border inline-block">
+                    PRONTI? VIA!
+                </span>
+
+                <div class="bg-pop-dark p-6 rounded-xl border-4 border-pop-dark text-white">
+                    <div id="fist-timer" class="text-6xl font-mono font-black text-pop-yellow tracking-widest">
+                        00:30
+                    </div>
+                    <span id="fist-instruction" class="text-xs font-mono text-gray-300 block mt-2 uppercase">
+                        PREMI IL PULSANTE PER INIZIARE
+                    </span>
+                </div>
+
+                <button onclick="runFistExperiment()" id="fist-btn" class="w-full py-4 bg-pop-red text-white font-mono font-black text-sm uppercase tracking-widest hover:bg-pop-yellow hover:text-pop-dark transition transform active:scale-95 street-border pop-shadow-dark">
+                    ▶ PARTE L'ESERCIZIO (30 SEC)
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Footer Navigation -->
+        <div class="flex justify-between items-center pt-4 border-t-4 border-white font-mono text-xs font-bold">
+            <span class="hidden md:inline text-white">ESPERIMENTO SENSORIALE INIZIALE ✊</span>
+            <a href="#slide-2" class="w-full md:w-auto text-center bg-pop-dark text-white px-6 py-3 hover:bg-pop-red transition uppercase street-border pop-shadow-orange">
+                1. ANALIZZA COSA HAI PROVATO &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= SLIDE 2: SPIEGAZIONE E RIFLESSIONE ================= -->
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-bg text-pop-dark border-b-8 border-pop-red">
+        
+        <div class="flex justify-between items-center border-b-4 border-pop-dark pb-4 font-mono text-xs font-bold">
+            <span class="bg-pop-red text-white px-3 py-1 uppercase tracking-wider street-border">// 01 SPIEGAZIONE</span>
+            <span class="bg-white text-pop-dark px-3 py-1 border-2 border-pop-dark font-black">Slide 2 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-6xl mx-auto w-full grid md:grid-cols-12 gap-8 items-center">
+            
+            <div class="md:col-span-7 space-y-6">
+                <span class="bg-pop-yellow text-pop-dark font-mono font-black text-xs px-3 py-1 uppercase street-border inline-block">
+                    💭 CHE COSA È SUCCESSO?
+                </span>
+
+                <h2 class="text-3xl md:text-5xl font-black uppercase leading-tight">
+                    TRATTENERE CI RENDE <br>
+                    <span class="bg-pop-red text-white px-3 py-1 street-border inline-block -rotate-1 my-1">
+                        RIGIDI E AFFATICATI
+                    </span>
+                </h2>
+
+                <p class="text-base md:text-lg font-medium text-gray-800 leading-relaxed">
+                    Mantenere il pugno chiuso costa fatica: le dita si irrigidiscono, la mano fa male e <strong>con il pugno chiuso non puoi afferrare niente di nuovo</strong>.
+                </p>
+                <p class="text-base md:text-lg font-medium text-gray-800 leading-relaxed">
+                    Accade la stessa cosa quando viviamo con <strong>gelosia, possesso ed egoismo</strong>: ci stringiamo attorno a quello che abbiamo per paura di perderlo, ma finiamo solo per stancarci e isolarci.
+                </p>
+            </div>
+
+            <!-- Visual Comparison Cards -->
+            <div class="md:col-span-5 grid grid-cols-2 gap-4">
+                <div class="bg-pop-red text-white p-5 rounded-2xl street-border pop-shadow-dark flex flex-col justify-between h-64 -rotate-2">
+                    <span class="font-mono font-black text-4xl">✊</span>
+                    <div>
+                        <span class="font-mono font-black text-xs uppercase block text-pop-dark bg-white px-2 py-0.5 rounded street-border w-max mb-1">PUGNO CHIUSO</span>
+                        <p class="text-xs font-bold leading-tight">Tensione, gelosia, paura di perdere, incapacità di accogliere.</p>
+                    </div>
+                </div>
+
+                <div class="bg-pop-emerald text-white p-5 rounded-2xl street-border pop-shadow-dark flex flex-col justify-between h-64 rotate-2">
+                    <span class="font-mono font-black text-4xl">✋</span>
+                    <div>
+                        <span class="font-mono font-black text-xs uppercase block text-pop-dark bg-pop-yellow px-2 py-0.5 rounded street-border w-max mb-1">MANO APERTA</span>
+                        <p class="text-xs font-bold leading-tight">Libertà, sollievo, disponibilità a donare e ricevere.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-4 border-pop-dark font-mono text-xs font-bold">
+            <a href="#slide-1" class="text-gray-500 hover:text-pop-dark">&larr; INDIETRO</a>
+            <a href="#slide-3" class="bg-pop-dark text-white px-4 py-2 hover:bg-pop-orange transition uppercase street-border">
+                2. INQUADRAMENTO MISSIONARIO &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= SLIDE 3: VANGELO E MISSIONE ================= -->
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-bg text-pop-dark border-b-8 border-pop-emerald">
+        
+        <div class="flex justify-between items-center border-b-4 border-pop-dark pb-4 font-mono text-xs font-bold">
+            <span class="bg-pop-orange text-white px-3 py-1 uppercase tracking-wider street-border">// 02 INQUADRAMENTO MISSIONARIO</span>
+            <span class="bg-white text-pop-dark px-3 py-1 border-2 border-pop-dark font-black">Slide 3 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-5xl mx-auto w-full grid md:grid-cols-12 gap-8 items-center">
+            
+            <div class="md:col-span-7 space-y-6">
+                <span class="bg-pop-emerald text-white font-mono font-black text-xs px-3 py-1 uppercase street-border inline-block">
+                    🌍 LO STILE MISSIONARIO
+                </span>
+
+                <h2 class="text-3xl md:text-5xl font-black uppercase leading-tight">
+                    IL DONO VIVE SE <br>
+                    <span class="bg-pop-yellow text-pop-dark px-2 street-border inline-block -rotate-1">LO CONDIVIDI</span>
+                </h2>
+
+                <p class="text-base font-medium text-gray-800 leading-relaxed">
+                    I missionari insegnano che <strong>tutto ciò che abbiamo è un dono</strong>: i talenti, le amicizie, il tempo e la vita stessa. Se li tratteniamo solo per noi, marciscono. Se li mettiamo in circolo a mani aperte, moltiplicano la gioia.
+                </p>
+
+                <div class="p-4 bg-pop-orange text-white street-border pop-shadow-dark font-mono text-xs space-y-1">
+                    <span class="font-black text-pop-yellow block uppercase">💡 MESSAGGIO CHIAVE:</span>
+                    <p class="font-bold">Solo chi ha il coraggio di aprire le mani e rischiare scopre quanta ricchezza c'è nel donare gratuitamente.</p>
+                </div>
+            </div>
+
+            <!-- Card Vangelo Highlight -->
+            <div class="md:col-span-5 bg-pop-yellow p-8 rounded-2xl street-border pop-shadow-red space-y-4">
+                <span class="font-mono font-black text-xs uppercase bg-pop-dark text-white px-2 py-1 street-border inline-block">
+                    📖 DAL VANGELO DI MARCO
+                </span>
+
+                <blockquote class="text-2xl font-black uppercase leading-snug text-pop-dark">
+                    “Chi vorrà salvare la propria vita, la perderà; ma chi perderà la propria vita per causa mia, la salverà.”
+                </blockquote>
+
+                <div class="pt-4 border-t-2 border-pop-dark font-mono text-xs font-black uppercase text-pop-red">
+                    🔑 Il valore della vita sta in ciò che dona, non in ciò che trattiene.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-4 border-pop-dark font-mono text-xs font-bold">
+            <a href="#slide-2" class="text-gray-500 hover:text-pop-dark">&larr; INDIETRO</a>
+            <a href="#slide-4" class="bg-pop-dark text-white px-4 py-2 hover:bg-pop-emerald transition uppercase street-border">
+                3. SFIDA DEL GIORNO &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= SLIDE 4: SFIDA PRATICA E PREGHIERA ================= -->
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-white text-pop-dark">
+        
+        <div class="flex justify-between items-center border-b-4 border-pop-dark pb-4 font-mono text-xs font-bold">
+            <span class="bg-pop-emerald text-white px-3 py-1 uppercase tracking-wider street-border">// 03 IMPEGNO E PREGHIERA</span>
+            <span class="bg-pop-bg text-pop-dark px-3 py-1 border-2 border-pop-dark font-black">Slide 4 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-4xl mx-auto text-center space-y-8 w-full">
+            
+            <div class="inline-block bg-pop-orange text-white font-mono font-black text-xs uppercase px-4 py-1.5 street-border pop-shadow-emerald rotate-1">
+                ✋ IL TUO GESTO PER OGGI
+            </div>
+
+            <h2 class="text-4xl md:text-6xl font-black uppercase leading-none text-pop-dark">
+                OGGI SBLOCCA <br><span class="bg-pop-yellow px-4 street-border inline-block -rotate-1 mt-2">UN DONO</span>
+            </h2>
+
+            <!-- Box Prova Concreta -->
+            <div class="bg-pop-bg p-6 md:p-8 rounded-2xl street-border pop-shadow-orange max-w-2xl mx-auto text-left space-y-3">
+                <span class="font-mono font-black text-xs uppercase text-pop-red block">// IMPEGNO CONCRETO:</span>
+                <p class="text-base md:text-lg font-bold text-pop-dark leading-relaxed">
+                    Individua qualcosa che tendi a tenere stretto per gelosia o pigrizia e fai un gesto concreto per condividerlo oggi!
+                </p>
+            </div>
+
+            <div class="p-4 bg-pop-red text-white font-mono font-black text-xs md:text-sm uppercase tracking-wider street-border inline-block">
+                ✨ APRI LE MANI: SCOPRIRAI QUANTA LIBERTÀ C'È NEL DONARE!
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-4 border-pop-dark font-mono text-xs font-bold">
+            <a href="#slide-3" class="text-gray-500 hover:text-pop-dark">&larr; INDIETRO</a>
+            <span class="text-pop-orange font-black text-xs md:text-sm uppercase">BUON LUNEDÌ 5 OTTOBRE! 🚀</span>
+        </div>
+    </section>
+
+    <!-- SCRIPT TIMER PER L'ESERCIZIO DEL PUGNO -->
+    <script>
+        function runFistExperiment() {
+            const btn = document.getElementById('fist-btn');
+            const display = document.getElementById('fist-timer');
+            const instruction = document.getElementById('fist-instruction');
+            const badge = document.getElementById('phase-badge');
+
+            btn.disabled = true;
+            btn.classList.add('opacity-50', 'cursor-not-allowed');
+
+            let timeLeft = 30;
+            badge.textContent = "FASE 1: PUGNO CHIUSO ✊";
+            badge.className = "font-mono font-black text-xs uppercase tracking-widest bg-pop-red text-white px-3 py-1 street-border inline-block";
+            instruction.textContent = "STRINGI I PUGNI FORTE! Senti la tensione e la fatica...";
+
+            let interval = setInterval(() => {
+                timeLeft--;
+                let formatted = timeLeft < 10 ? '0' + timeLeft : timeLeft;
+                display.textContent = `00:${formatted}`;
+
+                if (timeLeft <= 0) {
+                    clearInterval(interval);
+                    
+                    // Fase 2: Apri le mani
+                    display.textContent = "✋ RELAX!";
+                    display.classList.remove('text-pop-yellow');
+                    display.classList.add('text-pop-emerald');
+                    
+                    badge.textContent = "FASE 2: MANI APERTE ✋";
+                    badge.className = "font-mono font-black text-xs uppercase tracking-widest bg-pop-emerald text-white px-3 py-1 street-border inline-block";
+                    instruction.textContent = "APRI LE MANI E RILASSA LE DITA! Senti il sollievo!";
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

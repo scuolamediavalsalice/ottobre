@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 23 ottobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mission: {
+                            orange: '#EA580C',   /* Arancio Missionario */
+                            bright: '#F97316',   /* Arancio Vivo */
+                            red: '#DC2626',      /* Rosso Fuoco */
+                            amber: '#F59E0B',    /* Ambra Caldo */
+                            cream: '#FFFBEB',    /* Sfondo Crema */
+                            peach: '#FFEDD5',    /* Pesca Chiaro */
+                            dark: '#1C1917',     /* Antracite Ad Alto Contrasto */
+                            light: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+    </style>
+</head>
+<body class="bg-mission-cream text-mission-dark font-sans antialiased overflow-x-hidden selection:bg-mission-orange selection:text-white">
+
+    <!-- ================= SLIDE 1: STIMOLO INTRODUTTIVO ================= -->
+    <section id="slide-1" class="min-h-screen w-full relative flex flex-col justify-between p-6 md:p-12 bg-mission-peach border-b border-mission-orange/20">
+
+        <!-- HEADER SLIDE 1 -->
+        <div class="w-full flex justify-between items-center font-mono text-xs md:text-sm z-10">
+            <span class="bg-mission-dark text-mission-cream px-3 py-1.5 rounded-full font-bold uppercase tracking-wider shadow-sm">
+                SCUOLA MEDIA VALSALICE
+            </span>
+            <span class="bg-mission-orange text-white px-3 py-1.5 rounded-full font-bold uppercase tracking-wider shadow-sm">
+                VENERDÌ 23 OTTOBRE
+            </span>
+        </div>
+
+        <!-- CONTENUTO CENTRALE SLIDE 1 -->
+        <div class="my-auto max-w-3xl mx-auto w-full px-2 md:px-6 text-center space-y-8">
+
+            <div class="space-y-3">
+                <span class="bg-white/80 backdrop-blur text-mission-orange font-mono font-bold text-xs px-4 py-2 rounded-full border border-mission-orange/20 uppercase tracking-widest inline-block shadow-sm">
+                    🖍️ UN PICCOLO ESPERIMENTO
+                </span>
+                <h1 class="text-3xl md:text-5xl font-black text-mission-dark uppercase tracking-tight leading-tight">
+                    Cosa succede se uso <br>
+                    <span class="text-mission-orange">questo gessetto solo io?</span>
+                </h1>
+            </div>
+
+            <div class="bg-white/90 backdrop-blur p-8 md:p-12 rounded-3xl shadow-xl border border-white space-y-6 text-center relative overflow-hidden">
+                <div class="absolute -top-12 -right-12 w-32 h-32 bg-mission-amber/20 rounded-full blur-2xl pointer-events-none"></div>
+
+                <p class="text-xl md:text-3xl font-black text-mission-dark uppercase leading-relaxed">
+                    Finché resta uno solo, <br>
+                    <span class="text-mission-red">può usarlo una persona<br>alla volta.</span>
+                </p>
+
+                <div class="pt-2">
+                    <p class="text-sm md:text-base font-mono font-bold text-mission-dark/70 uppercase bg-mission-cream rounded-full px-5 py-2 inline-block border border-mission-orange/10 shadow-sm">
+                        E se provassimo a spezzarlo?
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FOOTER SLIDE 1 -->
+        <div class="w-full flex justify-between items-center font-mono text-xs md:text-sm z-10">
+            <span class="text-mission-orange font-bold tracking-wider hidden sm:block bg-white/60 px-3 py-1 rounded-full border border-mission-orange/10">
+                CONDIVISIONE
+            </span>
+            <a href="#slide-2" class="ml-auto bg-mission-dark text-white px-5 py-2.5 rounded-full hover:bg-mission-orange transition-all duration-300 font-bold flex items-center gap-2 uppercase shadow-md">
+                1. IL SIGNIFICATO &darr;
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- ================= SLIDE 2: INQUADRAMENTO CARISMATICO ================= -->
+    <section id="slide-2" class="min-h-screen w-full relative flex flex-col justify-between p-6 md:p-12 bg-white border-b border-mission-orange/20">
+
+        <!-- HEADER SLIDE 2 -->
+        <div class="w-full flex justify-between items-center font-mono text-xs md:text-sm z-10">
+            <span class="bg-mission-orange/10 text-mission-orange px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">
+                // INQUADRAMENTO CARISMATICO
+            </span>
+            <span class="bg-mission-cream text-mission-dark px-3 py-1.5 rounded-full font-bold border border-mission-amber/30">
+                SLIDE 2 / 3
+            </span>
+        </div>
+
+        <!-- CONTENUTO CENTRALE SLIDE 2 -->
+        <div class="my-auto max-w-3xl mx-auto w-full px-2 md:px-6 text-center space-y-8">
+
+            <div class="space-y-4">
+                <span class="bg-mission-amber/20 text-mission-dark font-mono font-bold text-xs px-4 py-2 rounded-full uppercase tracking-widest inline-block">
+                    🥖 L'EUCARISTIA
+                </span>
+                <h2 class="text-4xl md:text-6xl font-black text-mission-dark uppercase tracking-tight leading-none">
+                    IMPARARE A FARSI <br>
+                    <span class="text-mission-orange">"PANE SPEZZATO"</span>
+                </h2>
+            </div>
+
+            <!-- Card Gesù -->
+            <div class="bg-mission-cream p-8 md:p-12 rounded-3xl shadow-xl border border-mission-peach space-y-6 text-left relative overflow-hidden">
+                <div class="absolute -top-12 -right-12 w-32 h-32 bg-mission-amber/20 rounded-full blur-2xl pointer-events-none"></div>
+                <blockquote class="text-2xl text-center md:text-4xl font-black text-mission-dark uppercase leading-snug">
+                    La struttura eucaristica della vita: <br>
+                    <span class="text-mission-red">Spezzarsi<br>per raddoppiare il bene.</span>
+                </blockquote>
+            </div>
+
+        </div>
+
+        <!-- FOOTER SLIDE 2 -->
+        <div class="w-full flex justify-between items-center font-mono text-xs md:text-sm z-10">
+            <a href="#slide-1" class="text-mission-dark font-bold hover:text-mission-orange transition px-3 py-1.5 rounded-full bg-mission-cream">
+                &larr; INDIETRO
+            </a>
+            <a href="#slide-3" class="bg-mission-orange text-white px-5 py-2.5 rounded-full font-bold hover:bg-mission-red transition-all duration-300 uppercase shadow-md">
+                2. RIFLESSIONE &darr;
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- ================= SLIDE 3: RIFLESSIONE FINALE ================= -->
+    <section id="slide-3" class="min-h-screen w-full relative flex flex-col justify-between p-6 md:p-12 bg-mission-cream">
+
+        <!-- HEADER SLIDE 3 -->
+        <div class="w-full flex justify-between items-center font-mono text-xs md:text-sm z-10">
+            <span class="bg-mission-red/10 text-mission-red px-3 py-1.5 rounded-full font-bold uppercase tracking-wider">
+                // RIFLESSIONE
+            </span>
+            <span class="bg-white text-mission-orange font-bold font-mono px-3 py-1.5 rounded-full border border-mission-orange/20 shadow-sm">
+                SLIDE 3 / 3
+            </span>
+        </div>
+
+        <!-- CONTENUTO CENTRALE SLIDE 3 -->
+        <div class="my-auto max-w-3xl mx-auto w-full space-y-6 px-2 md:px-6 text-center">
+
+            <div class="space-y-2">
+                <span class="bg-mission-dark text-mission-amber font-mono font-bold text-xs px-4 py-2 rounded-full uppercase tracking-widest inline-block shadow-sm">
+                    ✨ RADDOPPIARE IL BENE
+                </span>
+            </div>
+
+            <!-- Card Spiegazione -->
+            <div class="bg-mission-dark text-white p-8 md:p-10 rounded-3xl shadow-2xl space-y-6 text-left border border-white/10">
+
+                <p class="text-base text-center md:text-xl font-normal text-gray-300 leading-relaxed">
+                    Quando il gessetto viene spezzato, <strong class="text-mission-amber font-semibold">raddoppia e permette a due persone di esprimersi insieme</strong>.
+                </p>
+
+                <p class="text-base text-center md:text-xl font-normal text-gray-300 leading-relaxed">
+                    Gesù nell'Eucaristia fa esattamente questo: <strong class="text-mission-amber font-semibold">si "spezza" per raggiungere ciascuno di noi</strong>.
+                </p>
+
+                <div class="p-5 bg-white/10 backdrop-blur rounded-2xl border border-white/10 font-mono text-sm md:text-base text-center font-bold text-mission-cream leading-relaxed">
+                    🌟 Quando accettiamo di "spezzare" la nostra giornata<br>per fare spazio agli altri,<br><span class="text-mission-amber uppercase">stiamo raddoppiando il bene</span>.
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER SLIDE 3 -->
+        <div class="w-full flex justify-between items-center font-mono text-xs md:text-sm z-10">
+            <a href="#slide-2" class="text-mission-dark font-bold hover:text-mission-orange transition px-3 py-1.5 rounded-full bg-white">
+                &larr; INDIETRO
+            </a>
+            <span class="bg-mission-dark text-mission-amber px-4 py-2 rounded-full uppercase font-bold shadow-sm">
+                BUON VENERDÌ!
+            </span>
+        </div>
+
+    </section>
+
+</body>
+</html>

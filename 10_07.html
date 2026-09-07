@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 7 ottobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pop: {
+                            bg: '#FFF6F0',        /* Warm Cream */
+                            dark: '#120E0C',      /* Dark Espresso */
+                            orange: '#FF5722',    /* Vibrant Orange */
+                            amber: '#FFB300',     /* Amber Yellow */
+                            coral: '#FF7043',     /* Soft Coral */
+                            blue: '#2563EB',      /* Electric Blue Accent */
+                            cream: '#FFE0B2'      /* Light Peach */
+                        }
+                    },
+                    fontFamily: {
+                        mono: ['ui-monospace', 'monospace'],
+                        sans: ['Trebuchet MS', 'Arial Black', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .pop-shadow-dark {
+            box-shadow: 6px 6px 0px 0px #120E0C;
+        }
+        .pop-shadow-orange {
+            box-shadow: 6px 6px 0px 0px #FF5722;
+        }
+        .pop-shadow-blue {
+            box-shadow: 6px 6px 0px 0px #2563EB;
+        }
+        .pop-shadow-amber {
+            box-shadow: 6px 6px 0px 0px #FFB300;
+        }
+        .street-border {
+            border: 3.5px solid #120E0C;
+        }
+    </style>
+</head>
+<body class="bg-pop-bg text-pop-dark font-sans antialiased overflow-x-hidden selection:bg-pop-orange selection:text-white">
+
+    <!-- ================= SLIDE 1: ESPERIMENTO VISIVO IMMEDIATO ================= -->
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-orange text-white border-b-8 border-pop-dark relative overflow-hidden">
+        
+        <!-- Header Minimal -->
+        <div class="flex justify-between items-center border-b-4 border-pop-dark pb-4 font-mono text-xs md:text-sm font-black">
+            <span class="bg-pop-dark text-white px-3 py-1 uppercase tracking-widest street-border">
+                SCUOLA MEDIA VALSALICE
+            </span>
+            <span class="bg-pop-amber text-pop-dark px-3 py-1 tracking-widest uppercase street-border">
+                MERCOLEDÌ 7 OTTOBRE
+            </span>
+        </div>
+
+        <!-- Content Grid Interattiva -->
+        <div class="my-auto max-w-6xl mx-auto w-full grid md:grid-cols-12 gap-8 items-center">
+            
+            <!-- Testo Introduttivo e Quesito -->
+            <div class="md:col-span-5 space-y-5 text-left">
+                <div class="inline-block bg-pop-amber text-pop-dark font-mono font-black text-xs px-3 py-1 uppercase street-border -rotate-1">
+                    🧠 SFIDA VISIVA IMMEDIATA
+                </div>
+
+                <h1 class="text-4xl md:text-6xl font-black uppercase leading-none text-white">
+                    COSA VEDI <br>
+                    <span class="bg-pop-dark text-pop-amber px-3 street-border inline-block rotate-1 my-2">
+                        AL PRIMO SGUARDO?
+                    </span>
+                </h1>
+            </div>
+
+            <!-- Illusione Ottica Interattiva -->
+            <div class="md:col-span-7 bg-white text-pop-dark p-6 rounded-3xl street-border pop-shadow-dark space-y-4 text-center">
+                
+                <div class="relative w-full h-64 md:h-72 bg-pop-bg rounded-2xl street-border flex items-center justify-center p-4 overflow-hidden">
+                    <img id="duck-rabbit-img" src="https://upload.wikimedia.org/wikipedia/commons/4/45/Duck-Rabbit_illusion.jpg" alt="Illusione Anatra Coniglio" class="h-full object-contain mix-blend-multiply transition duration-300">
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 font-mono text-xs font-black">
+                    <button onclick="showDuck()" id="btn-duck" class="py-3 bg-pop-amber text-pop-dark street-border pop-shadow-dark uppercase hover:bg-pop-orange hover:text-white transition">
+                        🦆 GUARDA L'ANATRA (Guarda a SX)
+                    </button>
+                    <button onclick="showRabbit()" id="btn-rabbit" class="py-3 bg-pop-blue text-white street-border pop-shadow-dark uppercase hover:bg-pop-dark transition">
+                        🐰 GUARDA IL CONIGLIO (Guarda a DX)
+                    </button>
+                </div>
+
+                <span id="view-status" class="block font-mono text-xs font-bold text-pop-orange uppercase">
+                    Clicca sui pulsanti per cambiare punto di vista!
+                </span>
+            </div>
+
+        </div>
+
+        <!-- Footer Navigation -->
+        <div class="flex justify-between items-center pt-4 border-t-4 border-pop-dark font-mono text-xs font-bold">
+            <span class="hidden md:inline text-white">TESTA IL TUO SGUARDO ⚡</span>
+            <a href="#slide-2" class="w-full md:w-auto text-center bg-pop-dark text-white px-6 py-3 hover:bg-pop-amber hover:text-pop-dark transition uppercase street-border pop-shadow-amber">
+                1. SCOPRI IL SENSO DELL'ESPERIMENTO &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= SLIDE 2: SPIEGAZIONE DELL'ESPERIMENTO ================= -->
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-bg text-pop-dark border-b-8 border-pop-dark">
+        
+        <div class="flex justify-between items-center border-b-4 border-pop-dark pb-4 font-mono text-xs font-bold">
+            <span class="bg-pop-dark text-white px-3 py-1 uppercase tracking-wider street-border">// 01 SPIEGAZIONE DELL'ESPERIMENTO</span>
+            <span class="bg-white text-pop-dark px-3 py-1 border-2 border-pop-dark font-black">Slide 2 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-5xl mx-auto w-full grid md:grid-cols-12 gap-8 items-center">
+            
+            <div class="md:col-span-7 space-y-6">
+                <span class="bg-pop-amber text-pop-dark font-mono font-black text-xs px-3 py-1 uppercase street-border inline-block">
+                    💡 COSA CI INSEGNA QUESTA IMMAGINE?
+                </span>
+
+                <h2 class="text-3xl md:text-5xl font-black uppercase leading-tight text-pop-dark">
+                    L'IMMAGINE NON CAMBIA. <br>
+                    <span class="bg-pop-orange text-white px-3 py-1 street-border inline-block -rotate-1 my-1">
+                        CAMBIA LA TUA MENTE!
+                    </span>
+                </h2>
+
+                <p class="text-base md:text-lg font-medium text-gray-800 leading-relaxed">
+                    Il disegno sulla carta rimane esattamente identico. Eppure, a seconda di dove decidi di focalizzare la tua attenzione, puoi vedere due cose completamente diverse.
+                </p>
+                
+                <p class="text-base md:text-lg font-medium text-gray-800 leading-relaxed">
+                    Questo ci mostra che <strong>ciò che vediamo dipende spesso da come scegliamo di guardare</strong>.
+                </p>
+
+                <!-- Box Parola di Gesù -->
+                <div class="p-5 bg-white street-border pop-shadow-dark font-medium leading-relaxed text-sm md:text-base border-l-8 border-pop-orange">
+                    <span class="font-mono font-black text-xs uppercase text-pop-orange block mb-1">📖 IL VANGELO (MATTEO 6:22):</span>
+                    "Gli occhi sono come la lampada per il corpo; se i tuoi occhi sono buoni, tu sarai totalmente nella luce."
+                </div>
+            </div>
+
+            <!-- Card Sintesi Visiva -->
+            <div class="md:col-span-5 bg-pop-dark text-white p-6 md:p-8 rounded-2xl street-border pop-shadow-orange space-y-4">
+                <span class="font-mono font-black text-xs uppercase bg-pop-amber text-pop-dark px-2 py-1 street-border inline-block">
+                    🔑 IL SEGRETO DELLO SGUARDO
+                </span>
+
+                <h3 class="text-2xl font-black uppercase text-pop-amber leading-snug">
+                    Oltre la prima impressione
+                </h3>
+
+                <p class="text-xs md:text-sm font-medium text-gray-300 leading-relaxed">
+                    Quando guardiamo una persona, siamo abituati a fermarci alla prima cosa che salta all'occhio. Ma basta un piccolo sforzo di prospettiva per scoprire una realtà completamente nuova.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-4 border-pop-dark font-mono text-xs font-bold">
+            <a href="#slide-1" class="text-gray-500 hover:text-pop-dark">&larr; INDIETRO</a>
+            <a href="#slide-3" class="bg-pop-dark text-white px-4 py-2 hover:bg-pop-orange transition uppercase street-border">
+                2. DALL'IMMAGINE ALLA VITA &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= SLIDE 3: APPLICAZIONE ALLA VITA ================= -->
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-pop-bg text-pop-dark border-b-8 border-pop-blue">
+        
+        <div class="flex justify-between items-center border-b-4 border-pop-dark pb-4 font-mono text-xs font-bold">
+            <span class="bg-pop-blue text-white px-3 py-1 uppercase tracking-wider street-border">// 02 DALL'IMMAGINE ALLA VITA</span>
+            <span class="bg-white text-pop-dark px-3 py-1 border-2 border-pop-dark font-black">Slide 3 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-5xl mx-auto w-full grid md:grid-cols-12 gap-8 items-stretch">
+            
+            <!-- Sguardo Rigido -->
+            <div class="md:col-span-6 bg-white p-8 rounded-2xl street-border pop-shadow-orange space-y-4 flex flex-col justify-between">
+                <div class="space-y-3">
+                    <span class="bg-pop-coral text-white font-mono font-black text-xs px-3 py-1 uppercase street-border inline-block">
+                        ❌ SGUARDO RIGIDO
+                    </span>
+
+                    <h3 class="text-3xl font-black uppercase text-pop-dark">
+                        Fermarsi al primo difetto
+                    </h3>
+
+                    <p class="text-base font-medium text-gray-800 leading-relaxed">
+                        Spesso con le persone facciamo la stessa cosa: ci fissiamo solo su quello che ci dà fastidio, sul difetto o sull'errore, etichettando l'altro per sempre e smettendo di cercarvi il bello.
+                    </p>
+                </div>
+
+                <div class="p-3 bg-pop-cream street-border font-mono text-xs font-bold text-pop-dark">
+                    📌 Chiudi lo sguardo = Perdi il valore della persona
+                </div>
+            </div>
+
+            <!-- Sguardo di Gesù -->
+            <div class="md:col-span-6 bg-pop-dark text-white p-8 rounded-2xl street-border pop-shadow-blue space-y-4 flex flex-col justify-between">
+                <div class="space-y-3">
+                    <span class="bg-pop-amber text-pop-dark font-mono font-black text-xs px-3 py-1 uppercase street-border inline-block">
+                        ✨ SGUARDO DI GESÙ
+                    </span>
+
+                    <h3 class="text-3xl font-black uppercase text-pop-amber">
+                        Scorgere il bene nascosto
+                    </h3>
+
+                    <p class="text-base font-medium text-gray-300 leading-relaxed">
+                        Avere dedizione e stile missionario significa fare l'esercizio di <strong>cambiare angolazione</strong>. Gesù guarda ciascuno scoprendo il prezioso, l'unico e il bello che gli altri non riescono a vedere.
+                    </p>
+                </div>
+
+                <div class="p-3 bg-pop-blue text-white street-border font-mono text-xs font-bold">
+                    💡 Cambi sguardo = Scopri un valore nuovo
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-4 border-pop-dark font-mono text-xs font-bold">
+            <a href="#slide-2" class="text-gray-500 hover:text-pop-dark">&larr; INDIETRO</a>
+            <a href="#slide-4" class="bg-pop-dark text-white px-4 py-2 hover:bg-pop-orange transition uppercase street-border">
+                3. SFIDA DEL GIORNO &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= SLIDE 4: SFIDA E CONGEDO ================= -->
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-white text-pop-dark">
+        
+        <div class="flex justify-between items-center border-b-4 border-pop-dark pb-4 font-mono text-xs font-bold">
+            <span class="bg-pop-amber text-pop-dark px-3 py-1 uppercase tracking-wider street-border">// 03 IMPEGNO PRATICO</span>
+            <span class="bg-pop-bg text-pop-dark px-3 py-1 border-2 border-pop-dark font-black">Slide 4 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-4xl mx-auto text-center space-y-8 w-full">
+            
+            <div class="inline-block bg-pop-orange text-white font-mono font-black text-xs uppercase px-4 py-1.5 street-border pop-shadow-dark rotate-1">
+                🎯 ESERCIZIO PRATICO PER OGGI
+            </div>
+
+            <h2 class="text-4xl md:text-7xl font-black uppercase leading-none text-pop-dark">
+                CAMBIA LO SGUARDO <br><span class="bg-pop-amber px-4 street-border inline-block -rotate-1 mt-2">CAMBIA LA VITA</span>
+            </h2>
+
+            <div class="bg-pop-bg p-8 rounded-2xl street-border pop-shadow-orange max-w-2xl mx-auto text-left space-y-3">
+                <span class="font-mono font-black text-xs uppercase text-pop-blue block">// LA TUA SFIDA:</span>
+                <p class="text-lg font-bold text-pop-dark leading-relaxed">
+                    Scegli una persona con cui fatichi a relazionarti. Oggi sforzati di notare un suo pregio, una dote o una cosa buona che fa e guardala con gli occhi di Gesù!
+                </p>
+            </div>
+
+            <div class="p-4 bg-pop-dark text-white font-mono font-black text-sm uppercase tracking-wider street-border inline-block">
+                👁️ VEDRAI LA BELLEZZA IN CIASCUNO!
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-4 border-pop-dark font-mono text-xs font-bold">
+            <a href="#slide-3" class="text-gray-500 hover:text-pop-dark">&larr; INDIETRO</a>
+            <span class="text-pop-orange font-black text-sm uppercase">BUON MERCOLEDÌ 7 OTTOBRE! 🚀</span>
+        </div>
+    </section>
+
+    <!-- SCRIPT INTERATTIVO ILLUSIONE OTTICA -->
+    <script>
+        function showDuck() {
+            const status = document.getElementById('view-status');
+            const img = document.getElementById('duck-rabbit-img');
+            img.style.transform = 'scale(1.05)';
+            status.textContent = "🦆 ORA VEDI L'ANATRA! Becco aperto a sinistra.";
+            status.className = "block font-mono text-xs font-bold text-pop-orange uppercase";
+        }
+
+        function showRabbit() {
+            const status = document.getElementById('view-status');
+            const img = document.getElementById('duck-rabbit-img');
+            img.style.transform = 'scale(1.05)';
+            status.textContent = "🐰 ORA VEDI IL CONIGLIO! Orecchie lunghe a sinistra, sguardo a destra.";
+            status.className = "block font-mono text-xs font-bold text-pop-blue uppercase";
+        }
+    </script>
+</body>
+</html>

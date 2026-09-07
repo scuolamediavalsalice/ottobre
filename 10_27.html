@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 27 ottobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#FAF7F2',
+                            dark: '#1C1917',
+                            muted: '#78716C',
+                            terracotta: '#D97706',
+                            rust: '#C2410C',
+                            peach: '#FEF3C7',
+                            card: '#FFFFFF',
+                            border: '#1C1917',
+                            red: '#DC2626',
+                            orange: '#EA580C'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .pop-card {
+            border: 3px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #1C1917;
+        }
+        .pop-card-rust {
+            border: 3px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #C2410C;
+        }
+        .pop-card-red {
+            border: 3px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #DC2626;
+        }
+        .pop-card-orange {
+            border: 3px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #EA580C;
+        }
+    </style>
+</head>
+<body class="bg-brand-bg text-brand-dark font-sans antialiased overflow-x-hidden">
+
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-10 border-b-4 border-brand-dark relative">
+        
+        <div class="flex justify-between items-center pb-4 border-b-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-brand-rust text-white px-3 py-1 rounded-md uppercase tracking-wider">
+                SCUOLA MEDIA VALSALICE
+            </span>
+            <span class="bg-brand-peach text-brand-dark border-2 border-brand-dark px-3 py-1 rounded-md">
+                MARTEDÌ 27 OTTOBRE
+            </span>
+        </div>
+
+        <div class="my-auto max-w-3xl mx-auto w-full text-center space-y-6">
+            
+            <div class="inline-flex items-center gap-2 bg-brand-peach border-2 border-brand-dark font-mono font-bold text-xs md:text-sm px-4 py-1.5 rounded-full">
+                ⚡ ATTIVITÀ FLASH
+            </div>
+
+            <h1 class="text-3xl md:text-5xl font-black tracking-tight text-brand-dark leading-tight">
+                DINAMICA DEL <br>
+                <span class="bg-brand-orange text-white px-3 py-1 rounded-lg inline-block transform -rotate-1 mt-2 border-2 border-brand-dark">
+                    BINOCOLO IMPROVVISATO 🔭
+                </span>
+            </h1>
+
+            <div class="bg-brand-card p-6 md:p-8 rounded-2xl pop-card-red text-left space-y-4">
+                <p class="text-base md:text-lg font-bold leading-relaxed text-brand-dark">
+                    👉 <strong>Proviamoci adesso in classe:</strong>
+                </p>
+                <div class="p-4 bg-orange-50 rounded-xl border-2 border-brand-dark space-y-2">
+                    <p class="text-xs md:text-sm font-bold text-brand-dark">
+                        Arrotolate un foglio di quaderno (o fate due cerchi con le mani) come fosse un binocolo. Inquadrate <strong>un solo punto</strong> della classe (es. il cestino, un poster, un compagno).
+                    </p>
+                </div>
+                <div class="p-3 bg-brand-peach rounded-xl border-2 border-brand-dark font-mono text-xs md:text-sm font-extrabold text-brand-dark text-center">
+                    ❓ COSA SUCCEDE QUANDO STRINGIAMO LO SGUARDO SOLO SU UNA COSA?<br>PERDIAMO DI VISTA TUTTO IL RESTO!
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="hidden md:inline text-brand-muted">LE FRONTIERE DI OGGI</span>
+            <a href="#slide-2" class="w-full md:w-auto text-center bg-brand-orange text-white px-6 py-3 rounded-xl hover:bg-brand-dark transition duration-200 pop-card font-black">
+                SCOPRI LA STORIA &darr;
+            </a>
+        </div>
+    </section>
+
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-10 border-b-4 border-brand-dark bg-orange-50/50">
+        
+        <div class="flex justify-between items-center pb-4 border-b-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-brand-red text-white px-3 py-1 rounded-md uppercase tracking-wider">INQUADRAMENTO CARISMATICO</span>
+            <span class="text-brand-muted">SLIDE 2/4</span>
+        </div>
+
+        <div class="my-auto max-w-4xl mx-auto w-full space-y-6">
+            
+            <div class="text-center space-y-2">
+                
+                <h2 class="text-3xl md:text-4xl font-black text-brand-dark">
+                    Dove si trova davvero la missione?
+                </h2>
+            </div>
+
+            <div class="bg-brand-card text-center p-6 md:p-8 rounded-2xl pop-card space-y-4">
+                <p class="text-base md:text-lg font-bold leading-relaxed text-brand-dark">
+                    Spesso viviamo con il "binocolo" fisso sui nostri problemi o sul solito circolo di amicizie.<br>Proviamo, invece, ad allargare lo sguardo...
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-4 pt-2">
+                    <div class="bg-orange-100/60 p-4 rounded-xl border-2 border-brand-dark pop-card-orange">
+                        <div class="text-2xl">👀</div>
+                        <h4 class="font-black text-sm text-brand-dark mt-1">Togliere il binocolo</h4>
+                        <p class="text-xs text-brand-muted font-medium mt-1">Smettere di guardare solo i nostri soliti problemi o il nostro piccolo gruppo.</p>
+                    </div>
+                    <div class="bg-red-100/60 p-4 rounded-xl border-2 border-brand-dark pop-card-red">
+                        <div class="text-2xl">📍</div>
+                        <h4 class="font-black text-sm text-brand-dark mt-1">Le vere frontiere</h4>
+                        <p class="text-xs text-brand-muted font-medium mt-1">Sono il banco di chi è solo, chi oggi è silenzioso, chi viene preso di mira.</p>
+                    </div>
+                    <div class="bg-brand-peach p-4 rounded-xl border-2 border-brand-dark pop-card-rust">
+                        <div class="text-2xl">❤️</div>
+                        <h4 class="font-black text-sm text-brand-dark mt-1">Sguardo ampiezza XXL</h4>
+                        <p class="text-xs text-brand-muted font-medium mt-1">I missionari sono semplicemente persone che scelgono di guardare oltre.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-1" class="text-brand-muted hover:text-brand-dark">&larr; INDIETRO</a>
+            <a href="#slide-3" class="bg-brand-dark text-white px-5 py-2.5 rounded-xl hover:bg-brand-orange transition font-black">
+                PERCHÉ CI RIGUARDA? &darr;
+            </a>
+        </div>
+    </section>
+
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-10 border-b-4 border-brand-dark">
+        
+        <div class="flex justify-between items-center pb-4 border-b-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-brand-rust text-white px-3 py-1 rounded-md uppercase tracking-wider">RIFLESSIONE</span>
+            <span class="text-brand-muted">SLIDE 3/4</span>
+        </div>
+
+        <div class="my-auto max-w-3xl mx-auto w-full space-y-6">
+            
+            <h2 class="text-2xl md:text-4xl font-black text-brand-dark text-center">
+                Vedi davvero chi ti sta intorno?
+            </h2>
+
+            <div class="bg-brand-card p-6 md:p-8 rounded-2xl pop-card space-y-4">
+                <p class="text-sm md:text-base font-semibold leading-relaxed text-brand-dark">
+                    È facile vivere la giornata con il "binocolo fisso": guardiamo la lavagna, i display, i due o tre amici di sempre e ignoriamo il resto. Ma attorno a noi ci sono bisogni invisibili:
+                </p>
+
+                <div class="space-y-3 font-medium text-xs md:text-sm">
+                    <div class="flex items-start gap-3 bg-orange-50 p-3 rounded-lg border-2 border-brand-dark">
+                        <span class="text-base">🎒</span>
+                        <span><strong>Chi si sente solo ed escluso</strong>  </span>
+                    </div>
+                    <div class="flex items-start gap-3 bg-red-50 p-3 rounded-lg border-2 border-brand-dark">
+                        <span class="text-base">🌧️</span>
+                        <span><strong>Chi oggi è giù di morale</strong> ma non lo dimostra.</span>
+                    </div>
+                    <div class="flex items-start gap-3 bg-brand-peach p-3 rounded-lg border-2 border-brand-dark">
+                        <span>🎯</span>
+                        <span><strong>Avere uno sguardo missionario</strong> significa aprire il campo visivo e notare chi ci circonda.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-2" class="text-brand-muted hover:text-brand-dark">&larr; INDIETRO</a>
+            <a href="#slide-4" class="bg-brand-orange text-white px-5 py-2.5 rounded-xl hover:bg-brand-dark transition font-black">
+                PREGHIERA E SFIDA &darr;
+            </a>
+        </div>
+    </section>
+
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-10 bg-brand-peach/20">
+        
+        <div class="flex justify-between items-center pb-4 border-b-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-brand-dark text-white px-3 py-1 rounded-md uppercase tracking-wider">PREGHIERA & SFIDA</span>
+            <span class="text-brand-muted">SLIDE 4/4</span>
+        </div>
+
+        <div class="my-auto max-w-3xl mx-auto text-center space-y-6 w-full">
+            
+            <div class="inline-flex items-center gap-2 bg-brand-card border-2 border-brand-dark font-mono font-bold text-xs px-4 py-1.5 rounded-full">
+                🙏 PREGHIERA DEL MATTINO
+            </div>
+
+            <div class="bg-brand-card p-6 md:p-8 rounded-2xl pop-card text-left md:text-center space-y-4">
+                <p class="text-base md:text-lg font-bold text-brand-dark leading-relaxed">
+                    Signore, apri i nostri occhi e sveglia la nostra attenzione.<br><br>
+                    Aiutaci a togliere il binocolo della distrazione che ci fa vedere solo noi stessi. Donaci un cuore capace di accorgersi di chi è solo o in difficoltà, per portare presenza e calore proprio lì dove ce n'è più bisogno.<br><br>Amen.
+                </p>
+            </div>
+           
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-3" class="text-brand-muted hover:text-brand-dark">&larr; INDIETRO</a>
+            <span class="text-brand-orange uppercase font-black">BUON GIORNO E BUONA MISSIONE! ✨</span>
+        </div>
+    </section>
+
+</body>
+</html>

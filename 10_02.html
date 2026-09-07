@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 2 ottobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bright: {
+                            bg: '#F4F4F0',        /* Soft Off-White */
+                            card: '#FFFFFF',      /* Pure White */
+                            dark: '#111111',      /* Pitch Black */
+                            emerald: '#10B981',   /* Action Green */
+                            orange: '#FF5722',    /* Vivid Orange */
+                            yellow: '#FACC15',    /* Highlight Yellow */
+                            blue: '#3B82F6'       /* Mission Blue */
+                        }
+                    },
+                    fontFamily: {
+                        mono: ['ui-monospace', 'monospace'],
+                        sans: ['Trebuchet MS', 'Arial Black', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .pop-shadow {
+            box-shadow: 6px 6px 0px 0px #111111;
+        }
+        .pop-shadow-orange {
+            box-shadow: 6px 6px 0px 0px #FF5722;
+        }
+        .pop-shadow-blue {
+            box-shadow: 6px 6px 0px 0px #3B82F6;
+        }
+        .pop-shadow-emerald {
+            box-shadow: 6px 6px 0px 0px #10B981;
+        }
+        .street-border {
+            border: 3.5px solid #111111;
+        }
+    </style>
+</head>
+<body class="bg-bright-bg text-bright-dark font-sans antialiased overflow-x-hidden selection:bg-bright-orange selection:text-white">
+
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-bright-bg border-b-8 border-bright-dark relative overflow-hidden">
+        
+        <div class="flex justify-between items-center border-b-4 border-bright-dark pb-4 font-mono text-xs md:text-sm font-black">
+            <span class="bg-bright-dark text-white px-3 py-1 uppercase tracking-widest street-border">
+                SCUOLA MEDIA VALSALICE
+            </span>
+            <span class="bg-bright-orange text-white border-2 border-bright-dark px-3 py-1 tracking-widest uppercase street-border">
+                VENERDÌ 2 OTTOBRE
+            </span>
+        </div>
+<br>
+        <div class="max-w-5xl mx-auto text-center my-4 space-y-2">
+                        <h1 class="text-4xl md:text-6xl font-black uppercase tracking-tight leading-none text-bright-dark">
+                QUALE SCARPA <span class="bg-bright-blue text-white px-3 street-border inline-block -rotate-1">SCEGLI?</span>
+            </h1>
+        </div>
+
+        <div class="my-auto max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-stretch w-full">
+            
+            <div class="bg-white p-4 rounded-2xl street-border pop-shadow-orange flex flex-col justify-between space-y-3">
+                <div class="relative h-56 md:h-64 rounded-xl overflow-hidden street-border">
+                    <img src="https://i1.t4s.cz/page/2199/perex.webp?221123053956" alt="Scarpa sporca di fango" class="w-full h-full object-cover">
+                    <span class="absolute top-2 left-2 bg-bright-orange text-white font-mono font-black text-xs px-2 py-1 street-border uppercase">
+                        OPTION A
+                    </span>
+                </div>
+                <div class="bg-bright-bg p-3 street-border space-y-1">
+                    <h3 class="font-black uppercase text-base md:text-lg text-bright-orange">🥾 SPORCA DI FANGO</h3>
+                    <p class="font-mono text-xs font-bold text-gray-800">
+                        È la scarpa di chi si è messa in cammino, ha rischiato, ha esplorato e si è spesa davvero.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-2xl street-border pop-shadow-blue flex flex-col justify-between space-y-3">
+                <div class="relative h-56 md:h-64 rounded-xl overflow-hidden street-border">
+                    <img src="https://preview.redd.it/my-shoes-from-goat-came-without-the-top-of-the-box-is-this-v0-nvgsradu28fa1.jpg?width=640&crop=smart&auto=webp&s=66a4c2d5e8c0d5fd0de6ea3e5019bb7b76c2014c" alt="Scarpa completamente pulita e nuova" class="w-full h-full object-cover">
+                    <span class="absolute top-2 left-2 bg-bright-blue text-white font-mono font-black text-xs px-2 py-1 street-border uppercase">
+                        OPTION B
+                    </span>
+                </div>
+                <div class="bg-bright-bg p-3 street-border space-y-1">
+                    <h3 class="font-black uppercase text-base md:text-lg text-bright-blue">👟 IMMACOLATA E PULITA</h3>
+                    <p class="font-mono text-xs font-bold text-gray-800">
+                        È la scarpa rimasta nella scatola o in vetrina. Perfetta, ma che non è mai andata da nessuna parte.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-4 border-bright-dark font-mono text-xs font-bold">
+            <span class="hidden md:inline">METTITI IN CAMMINO ⚡</span>
+            <a href="#slide-2" class="w-full md:w-auto text-center bg-bright-dark text-white px-6 py-3 hover:bg-bright-orange transition uppercase street-border pop-shadow">
+                1. RIFLESSIONE E SPIEGAZIONE &darr;
+            </a>
+        </div>
+    </section>
+
+
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-white text-bright-dark border-b-8 border-bright-orange">
+        
+        <div class="flex justify-between items-center border-b-4 border-bright-dark pb-4 font-mono text-xs font-bold">
+            <span class="bg-bright-blue text-white px-3 py-1 uppercase tracking-wider street-border">// 01 ANALISI</span>
+            <span class="bg-bright-bg text-bright-dark px-3 py-1 border-2 border-bright-dark font-black">Slide 2 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-5xl mx-auto w-full grid md:grid-cols-12 gap-8 items-stretch">
+            
+            <div class="md:col-span-7 space-y-6 flex flex-col justify-between">
+                <div class="space-y-4">
+                    <span class="bg-bright-yellow text-bright-dark font-mono font-black text-xs px-3 py-1 uppercase street-border inline-block">
+                        💡 IL SENSO DEL CAMMINO
+                    </span>
+                    
+                    <h2 class="text-3xl md:text-5xl font-black uppercase leading-tight">
+                        IL VALORE DI <br>
+                        <span class="bg-bright-orange text-white px-3 py-1 street-border inline-block rotate-1 my-1">
+                            SPORCARSI
+                        </span>
+                    </h2>
+
+                    <p class="text-base md:text-lg font-medium text-gray-800 leading-relaxed">
+                        Per fare un viaggio vero, aiutando qualcuno o costruendo qualcosa di grande, <strong>è impossibile rimanere del tutto puliti e comodi</strong>. 
+                    </p>
+                    <p class="text-base md:text-lg font-medium text-gray-800 leading-relaxed">
+                        Chi sceglie di non sporcarsi mai le scarpe non rischia nulla, ma non vive nemmeno l'avventura di fare la differenza.
+                    </p>
+                </div>
+
+                <div class="p-4 bg-bright-bg street-border pop-shadow font-mono text-xs md:text-sm font-bold">
+                    📌 Rimanere a guardare mantiene puliti, ma mettersi in gioco riempie la vita di significato!
+                </div>
+            </div>
+
+            <div class="md:col-span-5 bg-bright-bg p-6 md:p-8 rounded-2xl street-border pop-shadow-blue flex flex-col justify-between space-y-6">
+                
+                <div class="space-y-4">
+                    <span class="bg-bright-dark text-white font-mono font-black text-xs px-3 py-1 uppercase street-border inline-block">
+                        💭 PER NOI OGGI
+                    </span>
+                    
+                    <h3 class="text-xl font-black uppercase text-bright-dark">
+                        E tu, che scarpe stai indossando?
+                    </h3>
+
+                    <ul class="space-y-3 font-mono text-xs md:text-sm font-bold text-gray-800">
+                        <li class="p-3 bg-white street-border border-l-8 border-l-bright-orange">
+                            Sei disposto a fare la fatica di fare il primo passo?
+                        </li>
+                        <li class="p-3 bg-white street-border border-l-8 border-l-bright-blue">
+                            Preferisci la comodità di non esporti o il coraggio di servire?
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-3 bg-bright-yellow text-bright-dark street-border font-mono text-xs font-black text-center uppercase">
+                    🚶‍♂️ Chi cammina lascia un'impronta!
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-4 border-bright-dark font-mono text-xs font-bold">
+            <a href="#slide-1" class="text-gray-500 hover:text-bright-dark">&larr; INDIETRO</a>
+            <a href="#slide-3" class="bg-bright-dark text-white px-4 py-2 hover:bg-bright-emerald transition uppercase street-border">
+                2. INQUADRAMENTO CON GESÙ &darr;
+            </a>
+        </div>
+    </section>
+
+
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-bright-bg text-bright-dark border-b-8 border-bright-emerald">
+        
+        <div class="flex justify-between items-center border-b-4 border-bright-dark pb-4 font-mono text-xs font-bold">
+            <span class="bg-bright-emerald text-white px-3 py-1 uppercase tracking-wider street-border">// 02 INQUADRAMENTO EVANGELICO</span>
+            <span class="bg-white text-bright-dark px-3 py-1 border-2 border-bright-dark font-black">Slide 3 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-5xl mx-auto w-full grid md:grid-cols-2 gap-8 items-stretch">
+            
+            <div class="bg-white p-6 md:p-8 rounded-2xl street-border pop-shadow-blue flex flex-col justify-between space-y-4">
+                <div class="space-y-3">
+                    <span class="bg-bright-yellow text-bright-dark font-mono font-black text-xs px-3 py-1 uppercase street-border inline-block">
+                        📖 DAL VANGELO (Gv 13)
+                    </span>
+                    
+                    <h2 class="text-2xl md:text-3xl font-black uppercase">
+                        Gesù si cinge l'asciugamano
+                    </h2>
+
+                    <p class="text-sm md:text-base font-medium text-gray-800 leading-relaxed">
+                        Gesù non è rimasto sul trono a guardare dall'alto. Si è alzato da tavola, si è chinato a terra fino ai piedi impolverati dei suoi discepoli e <strong>li ha lavati uno per uno</strong>.
+                    </p>
+                </div>
+
+                <div class="p-3 bg-bright-bg street-border font-mono text-xs font-bold text-bright-blue">
+                    🌊 SERVIRE = Chinarsi verso l'altro senza paura di sporcarsi.
+                </div>
+            </div>
+
+            <div class="bg-bright-dark text-white p-6 md:p-8 rounded-2xl street-border pop-shadow-orange flex flex-col justify-between space-y-4">
+                <div class="space-y-3">
+                    <span class="bg-bright-orange text-white font-mono font-black text-xs px-3 py-1 uppercase street-border inline-block">
+                        🌍 LO STILE DI GESÙ
+                    </span>
+
+                    <h2 class="text-2xl md:text-3xl font-black uppercase text-bright-yellow">
+                        Pronti a servire
+                    </h2>
+
+                    <p class="text-sm md:text-base font-medium text-gray-300 leading-relaxed">
+                        Gesù ci mostra che il vero potere è il servizio. Chi vuole essere grande nella vita non si mette in mostra per vanità, ma <strong>si mette a disposizione di chi ha bisogno</strong>.
+                    </p>
+                </div>
+
+                <div class="p-3 bg-bright-orange text-white street-border font-mono text-xs font-black uppercase">
+                    🚀 Chi ama non resta a guardare a mani giunte!
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-4 border-bright-dark font-mono text-xs font-bold">
+            <a href="#slide-2" class="text-gray-500 hover:text-bright-dark">&larr; INDIETRO</a>
+            <a href="#slide-4" class="bg-bright-dark text-white px-4 py-2 hover:bg-bright-blue transition uppercase street-border">
+                3. PREGHIERA E CONCLUSIONE &darr;
+            </a>
+        </div>
+    </section>
+
+
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-white text-bright-dark">
+        
+        <div class="flex justify-between items-center border-b-4 border-bright-dark pb-4 font-mono text-xs font-bold">
+            <span class="bg-bright-yellow text-bright-dark px-3 py-1 uppercase tracking-wider street-border">// 03 CONCLUSIONE</span>
+            <span class="bg-bright-bg text-bright-dark px-3 py-1 border-2 border-bright-dark font-black">Slide 4 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-4xl mx-auto w-full text-center space-y-8">
+            
+            <div class="inline-block bg-bright-dark text-white font-mono font-black text-xs uppercase px-4 py-1.5 street-border pop-shadow rotate-1">
+                🙏 PREGHIERA DEL MATTINO
+            </div>
+
+            <div class="bg-bright-bg p-8 md:p-12 rounded-2xl street-border pop-shadow-blue text-left space-y-6">
+                <blockquote class="text-xl md:text-3xl font-black uppercase leading-relaxed text-bright-dark">
+                    Signore Gesù, <br>
+                    donaci la gioia di <span class="bg-bright-yellow px-2 street-border inline-block my-1">non rimanere a guardare</span>. <br>
+                    Insegnaci ad allacciarci le scarpe ogni giorno per andare incontro agli altri, servendo con umiltà, coraggio e con il sorriso.
+                </blockquote>
+            </div>
+
+            <div class="p-4 bg-bright-emerald text-white street-border pop-shadow font-mono text-sm font-black uppercase tracking-wide">
+                👟 METTIAMOCI IN CAMMINO CON GIOIA!
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-4 border-bright-dark font-mono text-xs font-bold">
+            <a href="#slide-3" class="text-gray-500 hover:text-bright-dark">&larr; INDIETRO</a>
+            <span class="text-bright-orange font-black text-xs md:text-sm uppercase bg-bright-bg px-3 py-1 street-border">
+                BUON VENERDÌ E BUON FINE SETTIMANA! 🚀
+            </span>
+        </div>
+    </section>
+
+</body>
+</html>

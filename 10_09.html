@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 9 ottobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        warm: {
+                            bg: '#FFFDF9',        /* Warm Cream Background */
+                            surface: '#FFFFFF',   /* Pure White */
+                            dark: '#1C1917',      /* High Contrast Charcoal */
+                            muted: '#78716C',     /* Muted Text */
+                            orange: '#F97316',    /* Vibrant Warm Orange */
+                            amber: '#F59E0B',     /* Golden Amber */
+                            coral: '#FF6B52',     /* Soft Coral */
+                            peach: '#FFEDD5',     /* Light Peach Fill */
+                            indigo: '#6366F1',    /* Warm Deep Indigo */
+                            border: '#E7E5E4'     /* Subtle Neutral Border */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .pop-card-dark {
+            border: 2px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #1C1917;
+        }
+        .pop-card-orange {
+            border: 2px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #F97316;
+        }
+        .pop-card-indigo {
+            border: 2px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #6366F1;
+        }
+    </style>
+</head>
+<body class="bg-warm-bg text-warm-dark font-sans antialiased overflow-x-hidden selection:bg-warm-orange selection:text-white">
+
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 border-b-4 border-warm-orange relative">
+        
+        <div class="flex justify-between items-center pb-4 border-b border-warm-border max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-warm-dark text-white px-3 py-1.5 rounded-lg uppercase tracking-wider">
+                SCUOLA MEDIA VALSALICE
+            </span>
+            <span class="bg-warm-peach text-warm-orange border border-warm-orange/30 px-3 py-1.5 rounded-lg uppercase tracking-wider">
+                VENERDÌ 9 OTTOBRE
+            </span>
+        </div>
+
+        <div class="my-auto max-w-4xl mx-auto w-full text-center space-y-6">
+            
+            <div class="inline-flex items-center gap-2 bg-warm-indigo text-white font-mono font-bold text-xs md:text-sm px-4 py-2 rounded-full mx-auto shadow-sm">
+                🎮 SFIDA FLASH IN CLASSE
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-warm-dark leading-tight">
+                IL TELEFONO <br>
+                <span class="bg-gradient-to-r from-warm-orange via-warm-coral to-warm-amber bg-clip-text text-transparent">
+                    SENZA FILI
+                </span>
+            </h1>
+
+            <div class="bg-warm-surface p-6 md:p-8 rounded-3xl pop-card-indigo max-w-3xl mx-auto text-left space-y-4">
+                <span class="font-mono text-xs font-bold bg-warm-peach text-warm-orange px-3 py-1 rounded uppercase border border-warm-orange/30">
+                    ⚡ REGOLE
+                </span>
+                
+                <ol class="space-y-3 text-warm-dark font-medium text-sm md:text-base">
+                    <li class="flex items-start gap-3">
+                        <span class="flex-shrink-0 w-6 h-6 bg-warm-orange text-white rounded-full flex items-center justify-center font-bold text-xs">1</span>
+                        <span>L'insegnante sussurra una frase al primo compagno di fila.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="flex-shrink-0 w-6 h-6 bg-warm-orange text-white rounded-full flex items-center justify-center font-bold text-xs">2</span>
+                        <span>Passate il messaggio sussurrandolo <strong>una sola volta</strong> al vicino.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="flex-shrink-0 w-6 h-6 bg-warm-orange text-white rounded-full flex items-center justify-center font-bold text-xs">3</span>
+                        <span>L'ultimo studente dice ad alta voce cosa ha capito!</span>
+                    </li>
+                </ol>
+            </div>
+
+            <p class="text-sm md:text-lg font-bold text-warm-muted max-w-2xl mx-auto">
+                ❓ Quante parole sono cambiate? <br>Perché quando siamo di fretta o distratti smettiamo di ascoltare davvero?
+            </p>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t border-warm-border max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="hidden md:inline text-warm-muted">LA PRESENZA CHE FA LA DIFFERENZA ⚡</span>
+            <a href="#slide-2" class="w-full md:w-auto text-center bg-warm-orange text-white px-6 py-3 rounded-xl hover:bg-warm-dark transition-all duration-200 pop-card-dark font-bold">
+                1. SCOPRI IL SIGNIFICATO &darr;
+            </a>
+        </div>
+    </section>
+
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-warm-peach/30 border-b-4 border-warm-orange">
+        
+        <div class="flex justify-between items-center pb-4 border-b border-warm-border max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-warm-orange text-white px-3 py-1.5 rounded-lg uppercase tracking-wider">// 01 ASCOLTO REALE</span>
+            <span class="text-warm-muted">Slide 2 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-4xl mx-auto w-full text-center space-y-7">
+            
+            <div class="inline-flex items-center gap-2 bg-warm-surface text-warm-dark font-mono font-bold text-xs px-4 py-1.5 rounded-full border border-warm-border mx-auto">
+                👂 PRESENZA ED EMPATIA
+            </div>
+
+            <h2 class="text-3xl md:text-5xl font-extrabold text-warm-dark tracking-tight">
+                Dedicare tempo inizia <br>
+                <span class="text-warm-orange">dall'ascoltare davvero</span>
+            </h2>
+
+            <div class="p-6 md:p-8 bg-warm-surface rounded-2xl pop-card-dark max-w-2xl mx-auto text-left md:text-center text-warm-dark font-medium text-base md:text-lg leading-relaxed space-y-3">
+                <p>
+                    Dal gioco capiamo una cosa semplice: <strong><br>sentire non significa ascoltare.</strong>
+                </p>
+                <p class="text-warm-muted text-sm md:text-base">
+                    Un vero missionario non si presenta in un posto nuovo per dare subito risposte o fare discorsi: arriva per mettersi in silenzio e ascoltare i sogni, le gioie e le fatiche delle persone.
+                </p>
+            </div>
+
+            <div class="inline-block bg-warm-peach/60 border border-warm-orange/30 p-4 rounded-xl text-center max-w-md mx-auto">
+                <p class="text-warm-dark font-semibold text-sm md:text-base italic">
+                    "Educare è prima di tutto un'opera del cuore,<br>e il cuore si apre solo quando si sente ascoltato."
+                </p>
+                <span class="text-xs font-mono font-bold text-warm-orange block uppercase mt-1">
+                    — Pensiero salesiano
+                </span>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t border-warm-border max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-1" class="text-warm-muted hover:text-warm-dark">&larr; INDIETRO</a>
+            <a href="#slide-3" class="bg-warm-dark text-white px-5 py-2.5 rounded-xl hover:bg-warm-orange transition font-bold">
+                2. RIFLESSIONE GUIDATA &darr;
+            </a>
+        </div>
+    </section>
+
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 border-b-4 border-warm-orange">
+        
+        <div class="flex justify-between items-center pb-4 border-b border-warm-border max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-warm-amber text-white px-3 py-1.5 rounded-lg uppercase tracking-wider">// 02 DALLA STORIA A NOI</span>
+            <span class="text-warm-muted">Slide 3 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-5xl mx-auto w-full space-y-8">
+            
+            <div class="text-center space-y-2 max-w-2xl mx-auto">
+                <span class="bg-warm-peach text-warm-orange font-mono font-bold text-xs px-3 py-1 rounded-full uppercase border border-warm-orange/30">
+                    🌱 L'ASCOLTO COME MISSIONE
+                </span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-warm-dark">
+                    Come ascoltiamo <span class="text-warm-orange"><br>i nostri compagni?</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 items-stretch">
+                
+                <div class="bg-warm-surface p-7 rounded-2xl pop-card-dark space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <span class="inline-block bg-warm-peach text-warm-orange font-mono font-bold text-xs px-3 py-1 rounded-md uppercase">
+                            🌍 LO STILE MISSIONARIO
+                        </span>
+                        <h3 class="text-2xl font-bold text-warm-dark">
+                            Accogliere prima di giudicare
+                        </h3>
+                        <p class="text-warm-muted leading-relaxed font-medium text-base">
+                            Chi sa fare spazio agli altri non impone le proprie idee. Impara a conoscere la storia dell'altro con rispetto, senza fretta e senza pregiudizi.
+                        </p>
+                    </div>
+
+                    <div class="p-3 bg-warm-bg rounded-lg font-mono text-xs font-bold text-warm-dark border border-warm-border">
+                        👂 Prima di dare consigli, impara a capire chi hai davanti.
+                    </div>
+                </div>
+
+                <div class="bg-warm-dark text-white p-7 rounded-2xl pop-card-orange space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <span class="inline-block bg-warm-orange text-white font-mono font-bold text-xs px-3 py-1 rounded-md uppercase">
+                            🏫 A SCUOLA OGGI
+                        </span>
+                        <h3 class="text-2xl font-bold text-warm-amber">
+                            Ascolto attivo in classe
+                        </h3>
+                        <p class="text-gray-300 leading-relaxed font-medium text-base">
+                            Spesso ascoltiamo un amico solo in attesa di parlare di noi. Fare un passo indietro per dare reale attenzione alle parole dell'altro è il primo gesto di cura.
+                        </p>
+                    </div>
+
+                    <div class="p-3 bg-warm-orange/20 rounded-lg font-mono text-xs font-bold text-warm-amber border border-warm-orange/40">
+                        ✨ Ascolto vero = regalare il proprio tempo senza distrazioni.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t border-warm-border max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-2" class="text-warm-muted hover:text-warm-dark">&larr; INDIETRO</a>
+            <a href="#slide-4" class="bg-warm-orange text-white px-5 py-2.5 rounded-xl hover:bg-warm-dark transition font-bold">
+                3. PREGHIERA FINALE &darr;
+            </a>
+        </div>
+    </section>
+
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-warm-peach/20">
+        
+        <div class="flex justify-between items-center pb-4 border-b border-warm-border max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-warm-coral text-white px-3 py-1.5 rounded-lg uppercase tracking-wider">// 03 UN MOMENTO INSIEME</span>
+            <span class="text-warm-muted">Slide 4 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-3xl mx-auto text-center space-y-7 w-full">
+            
+            <div class="inline-flex items-center gap-2 bg-warm-surface text-warm-orange border border-warm-orange/30 font-mono font-bold text-xs px-4 py-1.5 rounded-full mx-auto">
+                🙏 PREGHIERA DEL MATTINO
+            </div>
+
+            <h2 class="text-3xl md:text-5xl font-extrabold text-warm-dark tracking-tight leading-tight">
+                Insegnaci ad ascoltare <br>
+                <span class="text-warm-orange">con il cuore aperto</span>
+            </h2>
+
+            <div class="bg-warm-surface p-8 md:p-10 rounded-3xl pop-card-dark text-left md:text-center space-y-6 clean-shadow">
+                <p class="text-lg md:text-xl font-medium text-warm-dark leading-relaxed italic">
+                    Signore, dona alle nostre orecchie e alla nostra mente la pazienza di ascoltare davvero. <br><br>
+                    Aiutaci a non correre quando un compagno o un'amica vuole parlarci. Insegnaci a custodire le gioie, le fatiche e i sogni di chi incrociamo oggi nei corridoi, proprio come sapevano fare i missionari e Don Bosco.<br><br>
+                    Amen.
+                </p>
+            </div>
+
+            <div class="inline-block bg-warm-dark text-white font-mono font-bold text-xs md:text-sm px-6 py-3 rounded-xl pop-card-orange uppercase">
+                👂 OGGI: ASCOLTA UN COMPAGNO SENZA INTERROMPERLO!
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t border-warm-border max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-3" class="text-warm-muted hover:text-warm-dark">&larr; INDIETRO</a>
+            <span class="text-warm-orange uppercase">BUON VENERDÌ 9 OTTOBRE! ✨</span>
+        </div>
+    </section>
+
+</body>
+</html>

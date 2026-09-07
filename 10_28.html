@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 28 ottobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#FFF8F5',
+                            dark: '#18181B',
+                            muted: '#71717A',
+                            orange: '#EA580C',
+                            red: '#DC2626',
+                            rust: '#9A3412',
+                            peach: '#FFEDD5',
+                            card: '#FFFFFF',
+                            border: '#18181B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'ui-monospace', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;800&family=Plus+Jakarta+Sans:wght@400;600;800;900&display=swap');
+        
+        html {
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .brutal-border {
+            border: 3px solid #18181B;
+        }
+        .brutal-shadow {
+            box-shadow: 5px 5px 0px 0px #18181B;
+        }
+        .brutal-shadow-orange {
+            box-shadow: 5px 5px 0px 0px #EA580C;
+        }
+    </style>
+</head>
+<body class="bg-brand-bg text-brand-dark font-sans antialiased overflow-x-hidden selection:bg-brand-orange selection:text-white">
+
+    <!-- ================= SLIDE 1 ================= -->
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-4 md:p-8 bg-brand-bg border-b-4 border-brand-dark relative">
+        
+        <!-- TOP NAV -->
+        <header class="flex justify-between items-center max-w-6xl mx-auto w-full font-mono text-xs md:text-sm font-bold border-b-2 border-brand-dark pb-3">
+            <div class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-brand-red rounded-full border border-brand-dark"></span>
+                <span class="uppercase tracking-wider text-brand-dark">SCUOLA MEDIA VALSALICE</span>
+            </div>
+            <span class="bg-brand-dark text-white px-3 py-1 font-mono text-xs uppercase tracking-widest">
+                MERCOLEDì 28 OTTOBRE
+            </span>
+        </header>
+
+        <!-- HERO CONTENT -->
+        <main class="my-auto max-w-6xl mx-auto w-full py-6">
+            <div class="grid lg:grid-cols-12 gap-6 items-center">
+                
+                <!-- TITOLO SINISTRA -->
+                <div class="lg:col-span-6 space-y-4 text-left">
+                    <span class="inline-block bg-brand-orange text-white font-mono text-xs font-black uppercase px-3 py-1 border-2 border-brand-dark brutal-shadow">
+                        🔥 ATTIVITÀ AD ALTA ENERGIA
+                    </span>
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-none tracking-tight text-brand-dark uppercase">
+                        LA SFIDA <br>
+                        <span class="text-brand-orange underline decoration-brand-dark decoration-4">DEL PASSO</span> <br>
+                        AVANTI <span class="inline-block animate-bounce">🚶‍♂️</span>
+                    </h1>
+                   
+                </div>
+
+                <!-- CONTENUTO DESTABILIZZANTE BENTO -->
+                <div class="lg:col-span-6 space-y-3">
+                    <div class="bg-brand-card brutal-border p-5 brutal-shadow space-y-3">
+                        <div class="flex justify-between items-center border-b-2 border-brand-dark pb-2">
+                            <span class="font-mono text-xs font-black text-brand-rust uppercase">⚡ CHIAMATA RAPIDA</span>
+                            <span class="bg-brand-peach text-brand-rust px-2 py-0.5 text-xs font-mono font-bold border border-brand-dark">IN PRIMA LINEA</span>
+                        </div>
+                        
+                        <div class="space-y-2 font-mono text-xs md:text-sm font-bold">
+                            <div class="p-3 bg-brand-peach/60 border-2 border-brand-dark flex items-center justify-between">
+                                <span>1. "Chi fa il capoclasse?"</span>
+                                <span class="text-brand-orange">→</span>
+                            </div>
+                            <div class="p-3 bg-brand-peach/60 border-2 border-brand-dark flex items-center justify-between">
+                                <span>2. "Chi spiega il compito?"</span>
+                                <span class="text-brand-orange">→</span>
+                            </div>
+                            <div class="p-3 bg-brand-peach/60 border-2 border-brand-dark flex items-center justify-between">
+                                <span>3. "Chi aiuta a riordinare?"</span>
+                                <span class="text-brand-orange">→</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-brand-red text-white brutal-border p-4 brutal-shadow-orange text-xs md:text-sm font-black text-center uppercase tracking-wide">
+                        👉 Fare il primo passo fa paura, ma quando qualcuno si espone... sblocca tutti gli altri!
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- FOOTER NAV -->
+        <footer class="flex justify-between items-center max-w-6xl mx-auto w-full pt-3 border-t-2 border-brand-dark font-mono text-xs md:text-sm font-bold">
+            <span class="hidden md:inline text-brand-muted uppercase">IL CORAGGIO DI EX-PONERE</span>
+            <a href="#slide-2" class="ml-auto bg-brand-dark text-white px-6 py-2.5 brutal-border hover:bg-brand-orange transition duration-200 font-black uppercase tracking-wider flex items-center gap-2">
+                IL NESSO CON IL TEMA &darr;
+            </a>
+        </footer>
+    </section>
+
+
+    <!-- ================= SLIDE 2 ================= -->
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-4 md:p-8 bg-brand-peach/40 border-b-4 border-brand-dark relative">
+        
+        <!-- TOP NAV -->
+        <header class="flex justify-between items-center max-w-6xl mx-auto w-full font-mono text-xs md:text-sm font-bold border-b-2 border-brand-dark pb-3">
+            <span class="bg-brand-orange text-white px-3 py-1 font-mono text-xs uppercase tracking-wider border border-brand-dark">
+                INQUADRAMENTO CARISMATICO
+            </span>
+            <span class="text-brand-dark font-mono font-black text-xs">
+                SLIDE 02 // 04
+            </span>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="my-auto max-w-5xl mx-auto w-full py-6 space-y-6">
+            
+            <div class="text-center space-y-2">
+                <span class="bg-brand-card font-mono text-xs font-black px-3 py-1 border-2 border-brand-dark uppercase text-brand-rust inline-block">
+                    ✨ LO STILE MISSIONARIO
+                </span>
+                <h2 class="text-3xl md:text-5xl font-black text-brand-dark uppercase tracking-tight">
+                    Dire <span class="text-brand-red">"Eccomi!"</span> prima degli altri
+                </h2>
+            </div>
+
+            <!-- CORE COMPARISON GRID -->
+            <div class="grid md:grid-cols-12 gap-4 items-stretch">
+                
+                <!-- MAIN TEXT CARD -->
+                <div class="md:col-span-12 bg-brand-card brutal-border p-6 brutal-shadow space-y-2">
+                    <span class="font-mono text-xs font-black text-brand-orange uppercase">// LA RIFLESSIONE</span>
+                    <p class="text-base md:text-xl font-extrabold text-brand-dark leading-snug">
+                        Dire <span class="bg-brand-peach px-2 py-0.5 border border-brand-dark">"Eccomi!"</span> fa sempre paura all'inizio perché ci espone al giudizio. Ma è proprio quel primo passo che rompe il ghiaccio e cambia le cose.
+                    </p>
+                </div>
+
+                <!-- CONTRAST 1 -->
+                <div class="md:col-span-6 bg-white brutal-border p-5 space-y-2 border-l-8 border-l-brand-orange">
+                    <h4 class="font-mono font-black text-sm text-brand-orange uppercase flex items-center gap-1">
+                        <span>❌</span> ASPETTARE GLI ALTRI
+                    </h4>
+                    <p class="text-xs md:text-sm font-semibold text-brand-muted">
+                        Restare nel gruppo sperando che qualcun altro prenda l'iniziativa, per non rischiare di fare brutte figure.
+                    </p>
+                </div>
+
+                <!-- CONTRAST 2 -->
+                <div class="md:col-span-6 bg-brand-dark text-white brutal-border p-5 space-y-2 border-l-8 border-l-brand-red">
+                    <h4 class="font-mono font-black text-sm text-brand-peach uppercase flex items-center gap-1">
+                        <span>✅</span> FARE IL PRIMO PASSO
+                    </h4>
+                    <p class="text-xs md:text-sm font-medium text-gray-300">
+                        I missionari sono semplicemente persone comuni che hanno avuto il coraggio di fare quel passo avanti per primi.
+                    </p>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- FOOTER NAV -->
+        <footer class="flex justify-between items-center max-w-6xl mx-auto w-full pt-3 border-t-2 border-brand-dark font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-1" class="text-brand-dark hover:text-brand-orange uppercase font-black">&larr; INDIETRO</a>
+            <a href="#slide-3" class="bg-brand-dark text-white px-6 py-2.5 brutal-border hover:bg-brand-orange transition font-black uppercase tracking-wider">
+                NEL NOSTRO QUOTIDIANO &darr;
+            </a>
+        </footer>
+    </section>
+
+
+    <!-- ================= SLIDE 3 ================= -->
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-4 md:p-8 bg-brand-bg border-b-4 border-brand-dark relative">
+        
+        <!-- TOP NAV -->
+        <header class="flex justify-between items-center max-w-6xl mx-auto w-full font-mono text-xs md:text-sm font-bold border-b-2 border-brand-dark pb-3">
+            <span class="bg-brand-rust text-white px-3 py-1 font-mono text-xs uppercase tracking-wider border border-brand-dark">
+                RIFLESSIONE PRATICA
+            </span>
+            <span class="text-brand-dark font-mono font-black text-xs">
+                SLIDE 03 // 04
+            </span>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="my-auto max-w-5xl mx-auto w-full py-6 space-y-6">
+            
+            <div class="text-left space-y-1">
+                <span class="font-mono text-xs font-black text-brand-orange uppercase">// APPLICAZIONE</span>
+                <h2 class="text-3xl md:text-5xl font-black text-brand-dark uppercase tracking-tight">
+                    Non aspettare che <br>
+                    <span class="bg-brand-orange text-white px-3 py-0.5 inline-block">parta sempre un altro</span>
+                </h2>
+            </div>
+
+            <!-- BENTO CARDS FOR OCCASIONS -->
+            <div class="grid md:grid-cols-3 gap-4">
+                
+                <!-- ITEM 1 -->
+                <div class="bg-brand-card brutal-border p-5 brutal-shadow flex flex-col justify-between space-y-4">
+                    <span class="font-mono text-2xl font-black text-brand-orange">01/</span>
+                    <div>
+                        <h3 class="font-black text-base text-brand-dark uppercase mb-1">COLLABORARE</h3>
+                        <p class="text-xs md:text-sm font-medium text-brand-muted">
+                            Iniziare per primi quando il prof chiede una mano o bisogna organizzare un lavoro di gruppo.
+                        </p>
+                    </div>
+                    <div class="w-full h-1 bg-brand-orange"></div>
+                </div>
+
+                <!-- ITEM 2 -->
+                <div class="bg-brand-card brutal-border p-5 brutal-shadow flex flex-col justify-between space-y-4">
+                    <span class="font-mono text-2xl font-black text-brand-red">02/</span>
+                    <div>
+                        <h3 class="font-black text-base text-brand-dark uppercase mb-1">ROMPERE IL SILENZIO</h3>
+                        <p class="text-xs md:text-sm font-medium text-brand-muted">
+                            Salutare per primi un compagno con cui parliamo poco o chiedere scusa dopo una discussione.
+                        </p>
+                    </div>
+                    <div class="w-full h-1 bg-brand-red"></div>
+                </div>
+
+                <!-- ITEM 3 -->
+                <div class="bg-brand-card brutal-border p-5 brutal-shadow flex flex-col justify-between space-y-4">
+                    <span class="font-mono text-2xl font-black text-brand-rust">03/</span>
+                    <div>
+                        <h3 class="font-black text-base text-brand-dark uppercase mb-1">DIFENDERE</h3>
+                        <p class="text-xs md:text-sm font-medium text-brand-muted">
+                            Esporsi per fermare una battuta pesante, senza aspettare che sia qualcun altro a farlo.
+                        </p>
+                    </div>
+                    <div class="w-full h-1 bg-brand-rust"></div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- FOOTER NAV -->
+        <footer class="flex justify-between items-center max-w-6xl mx-auto w-full pt-3 border-t-2 border-brand-dark font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-2" class="text-brand-dark hover:text-brand-orange uppercase font-black">&larr; INDIETRO</a>
+            <a href="#slide-4" class="bg-brand-red text-white px-6 py-2.5 brutal-border hover:bg-brand-dark transition font-black uppercase tracking-wider">
+                PREGHIERA &darr;
+            </a>
+        </footer>
+    </section>
+
+
+    <!-- ================= SLIDE 4 ================= -->
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-4 md:p-8 bg-brand-dark text-white relative">
+        
+        <!-- TOP NAV -->
+        <header class="flex justify-between items-center max-w-6xl mx-auto w-full font-mono text-xs md:text-sm font-bold border-b-2 border-gray-700 pb-3">
+            <span class="bg-brand-red text-white px-3 py-1 font-mono text-xs uppercase tracking-wider border border-white">
+                PREGHIERA & SFIDA
+            </span>
+            <span class="text-brand-peach font-mono font-black text-xs">
+                SLIDE 04 // 04
+            </span>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="my-auto max-w-4xl mx-auto w-full py-6 space-y-6">
+            
+            <!-- PREGHIERA CARD -->
+            <div class="bg-brand-bg text-brand-dark brutal-border p-6 md:p-8 brutal-shadow-orange space-y-4">
+                <div class="flex items-center gap-2 border-b-2 border-brand-dark pb-2 font-mono text-xs font-black text-brand-rust uppercase">
+                    <span>🙏</span> PREGHIERA DEL MATTINO
+                </div>
+                <p class="text-base md:text-xl font-bold leading-relaxed text-brand-dark">
+                    Signore, donaci il coraggio di uscire dall'incertezza e dalla pigrizia.<br><br>
+                    Quando c'è da aiutare, da fare la pace o da dire una parola buona, aiutaci a non aspettare gli altri. Insegnaci la gioia di fare per primi un passo avanti con generosità.<br><br>Amen.
+                </p>
+            </div>
+
+            </div>
+
+        </main>
+
+        <!-- FOOTER NAV -->
+        <footer class="flex justify-between items-center max-w-6xl mx-auto w-full pt-3 border-t-2 border-gray-700 font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-3" class="text-gray-400 hover:text-white uppercase font-black">&larr; INDIETRO</a>
+            <span class="text-brand-orange uppercase font-black tracking-wider">BUONGIORNO E BUON PASSO AVANTI! ✨</span>
+        </footer>
+    </section>
+
+</body>
+</html>

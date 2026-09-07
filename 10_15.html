@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 15 ottobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mission: {
+                            orange: '#EA580C',   /* Arancio Missionario Intenso */
+                            bright: '#F97316',   /* Arancio Vivo */
+                            red: '#DC2626',      /* Rosso Fuoco / Terra */
+                            amber: '#F59E0B',    /* Ambra Caldo */
+                            cream: '#FFFBEB',    /* Sfondo Crema Caldo */
+                            peach: '#FFEDD5',    /* Pesca Chiaro Fill */
+                            dark: '#1C1917',     /* Antracite Ad Alto Contrasto */
+                            light: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+
+        /* POP NEO-BRUTALISM SHADOWS IN TONI OTTOCENTO MISSIONARIO */
+        .pop-box-orange {
+            border: 3px solid #1C1917;
+            box-shadow: 6px 6px 0px 0px #EA580C;
+        }
+        .pop-box-red {
+            border: 3px solid #1C1917;
+            box-shadow: 6px 6px 0px 0px #DC2626;
+        }
+        .pop-box-amber {
+            border: 3px solid #1C1917;
+            box-shadow: 6px 6px 0px 0px #F59E0B;
+        }
+        .pop-box-black {
+            border: 3px solid #1C1917;
+            box-shadow: 6px 6px 0px 0px #1C1917;
+        }
+
+        /* Pulse Badge */
+        @keyframes pulse-fast {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .pulse-wow {
+            animation: pulse-fast 1.5s infinite;
+        }
+    </style>
+</head>
+<body class="bg-mission-cream text-mission-dark font-sans antialiased overflow-x-hidden selection:bg-mission-orange selection:text-white">
+
+    <!-- ================= SLIDE 1: BENTO-GRID POP HERO ================= -->
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-4 md:p-8 bg-mission-cream relative border-b-8 border-mission-orange">
+
+        <!-- Top Bar Neo-Pop -->
+        <div class="flex justify-between items-center max-w-6xl mx-auto w-full font-mono text-xs md:text-sm font-black">
+            <span class="bg-mission-orange text-white px-3 py-1.5 rounded-none border-2 border-mission-dark transform -rotate-1">
+                SCUOLA MEDIA VALSALICE
+            </span>
+            <span class="bg-mission-red text-white px-3 py-1.5 rounded-none border-2 border-mission-dark transform rotate-1">
+                GIOVEDÌ 15 OTTOBRE
+            </span>
+        </div>
+
+        <!-- BENTO GRID ASIMMETRICA WOW -->
+        <div class="my-auto max-w-6xl mx-auto w-full grid md:grid-cols-12 gap-4 items-center">
+
+            <!-- Box Big Title (7 col) -->
+            <div class="md:col-span-7 bg-mission-orange text-white p-6 md:p-8 rounded-2xl pop-box-black space-y-4">
+                <div class="inline-block bg-mission-dark text-mission-amber font-mono font-black text-xs px-3 py-1 rounded uppercase tracking-widest">
+                    🌍 OTTOBRE MISSIONARIO // MGS
+                </div>
+                <h1 class="text-4xl md:text-7xl font-black uppercase tracking-tighter leading-none">
+                    I GIOVANI <br>
+                    <span class="bg-mission-red text-white px-2 italic">PER I GIOVANI</span>
+                </h1>            </div>
+
+            <!-- Box Don Viganò Story (5 col) -->
+            <div class="md:col-span-5 bg-mission-red text-white p-6 rounded-2xl pop-box-orange space-y-3 flex flex-col justify-between h-full">
+                <div>
+                    <span class="bg-mission-amber text-mission-dark font-mono font-black text-xs px-2 py-0.5 rounded uppercase">
+                        📜 LA STORIA
+                    </span>
+                    <h3 class="text-2xl font-black mt-2">La lezione di Don Viganò</h3>
+                    <p class="text-sm font-medium opacity-95 mt-1 leading-relaxed">
+                        Don Egidio Viganò ricordava sempre come i primi Salesiani fossero poco più che ragazzini di 16-18 anni.<br> Erano ragazzi cresciuti nella fatica, molti dei quali non avevano una famiglia. Eppure, Don Bosco compì un atto di fiducia assoluto, quasi impensabile per l'epoca: affidò interamente a loro la cura, la protezione e la guida dei bambini più piccoli dell'oratorio.
+                    </p>
+                </div>            </div>
+
+            <!-- Full Width Strip Banner -->
+            <div class="md:col-span-12 bg-mission-amber text-mission-dark p-4 rounded-xl pop-box-black flex flex-col md:flex-row items-center justify-between gap-3 font-extrabold text-sm md:text-base">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl">⚡</span>
+                    <span>Non aspettare di diventare grande per essere un punto di riferimento per chi ti sta accanto!</span>
+                </div>
+                <span class="bg-mission-dark text-mission-amber font-mono text-xs px-3 py-1 rounded uppercase">NOW IS THE TIME</span>
+            </div>
+
+        </div>
+
+        <!-- Footer Bar -->
+        <div class="flex justify-between items-center max-w-6xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="text-mission-orange hidden md:inline">#YOUTH4YOUTH // MOVIMENTO GIOVANILE SALESIANO</span>
+            <a href="#slide-2" class="w-full md:w-auto text-center bg-mission-red text-white px-6 py-3 rounded-xl border-2 border-mission-dark font-black hover:bg-mission-orange transition-all transform hover:-translate-y-1">
+                1. SLOGAN SPEED CHALLENGE (LIVE) &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= SLIDE 2: ATTIVITÀ DINAMICA "SLOGAN MISSIONARIO" ================= -->
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-4 md:p-8 bg-mission-peach border-b-8 border-mission-red">
+
+        <div class="flex justify-between items-center max-w-6xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-mission-orange text-white px-3 py-1.5 rounded-none border-2 border-mission-dark font-black uppercase">
+                // 01 CHALLENGE IN CLASSE
+            </span>
+            <span class="bg-mission-dark text-mission-amber px-3 py-1.5 rounded-none border-2 border-mission-dark font-black">
+                SLIDE 2 / 4
+            </span>
+        </div>
+
+        <div class="my-auto max-w-5xl mx-auto w-full space-y-6">
+
+            <div class="text-center space-y-2">
+                <span class="bg-mission-red text-white font-mono font-black text-xs px-4 py-1.5 rounded-full border-2 border-mission-dark uppercase tracking-widest pulse-wow">
+                    ⏱️ ATTIVITÀ EXPRESS (2 MINUTI)
+                </span>
+                <h2 class="text-3xl md:text-5xl font-black text-mission-dark uppercase tracking-tight">
+                    INVENTATE LO SLOGAN <br>
+                    <span class="text-mission-orange underline decoration-mission-red decoration-4">SULLA MISSIONE!</span>
+                </h2>
+            </div>
+
+            <!-- Card Interactive Task -->
+            <div class="bg-white text-mission-dark p-6 md:p-8 rounded-3xl pop-box-orange space-y-6">
+
+                <!-- Obiettivo Scritto Chiaro -->
+                <div class="bg-mission-cream border-2 border-mission-dark p-4 rounded-xl text-center">
+                    <p class="font-extrabold text-sm md:text-base text-mission-dark">
+                        🌍 <span class="text-mission-red uppercase font-black">Obiettivo:</span> Insieme al tuo compagno di banco, inventa un motto missionario capace di lanciare un messaggio forte sul mettersi in gioco per gli altri e nel mondo!
+                    </p>
+                </div>
+
+                <!-- 2 Step Operativi Generosi -->
+                <div class="grid md:grid-cols-2 gap-6 text-left">
+                    
+                    <div class="p-5 bg-mission-peach/60 border-2 border-mission-dark rounded-xl space-y-2 relative">
+                        <div class="w-8 h-8 bg-mission-dark text-mission-amber font-black rounded-full flex items-center justify-center font-mono text-sm">1</div>
+                        <h4 class="font-black text-lg text-mission-dark">L'IDEA A COPPIE</h4>
+                        <p class="text-xs md:text-sm font-bold text-gray-700">Pensate a cosa significa oggi <strong>essere missionari</strong>: donarsi, aiutare chi ha bisogno, portare gioia o fare la differenza.</p>
+                    </div>
+
+                    <div class="p-5 bg-mission-orange/20 border-2 border-mission-dark rounded-xl space-y-2 relative">
+                        <div class="w-8 h-8 bg-mission-orange text-white font-black rounded-full flex items-center justify-center font-mono text-sm">2</div>
+                        <h4 class="font-black text-lg text-mission-dark">LA REGOLA</h4>
+                        <p class="text-xs md:text-sm font-bold text-gray-700">Massimo <strong>7 parole</strong>! Deve essere un messaggio diretto e potente, come uno slogan da stampare su una maglietta o un manifesto.</p>
+                    </div>
+
+                </div>
+
+                <!-- Box Esempi di Ispirazione Rapidi -->
+                <div class="p-4 bg-mission-dark text-white rounded-xl border-2 border-mission-dark font-mono text-xs space-y-2">
+                    <div class="text-mission-amber font-bold flex items-center gap-2">
+                        <span>💡 IDEE E ISPIRAZIONI MISSIONARIE:</span>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-2 text-gray-300 font-sans font-bold text-xs">
+                        <div class="bg-white/10 p-2 rounded">• "La missione parte da un piccolo gesto."</div>
+                        <div class="bg-white/10 p-2 rounded">• "Metti il cuore in tutto ciò che fai."</div>
+                        <div class="bg-white/10 p-2 rounded">• "Porta luce dove c'è buio."</div>
+                        <div class="bg-white/10 p-2 rounded">• "Missionari oggi: insieme si può!"</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center max-w-6xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-1" class="text-mission-dark hover:underline">&larr; INDIETRO</a>
+            <a href="#slide-3" class="bg-mission-orange text-white px-5 py-2.5 rounded-xl border-2 border-mission-dark font-black hover:bg-mission-red transition">
+                2. PASSA ALLA RIFLESSIONE &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= SLIDE 3: RIFLESSIONE - MISSIONARI NEI CORRIDOI ================= -->
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-4 md:p-8 bg-mission-cream border-b-8 border-mission-amber">
+
+        <div class="flex justify-between items-center max-w-6xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-mission-red text-white px-3 py-1.5 rounded-none border-2 border-mission-dark font-black uppercase">
+                // 02 MISSIONE BEN CHIARA
+            </span>
+            <span class="text-mission-orange">SLIDE 3 / 4</span>
+        </div>
+
+        <div class="my-auto max-w-5xl mx-auto w-full space-y-8">
+
+            <div class="text-center space-y-2">
+                <span class="bg-mission-amber text-mission-dark font-mono font-black text-xs px-3 py-1 rounded-none border-2 border-mission-dark uppercase">
+                    💥 LA VISIONE DI DON BOSCO
+                </span>
+                <h2 class="text-3xl md:text-6xl font-black text-mission-dark uppercase tracking-tight">
+                    I GRANDI CUSTODISCONO <span class="text-mission-orange">I PICCOLI</span>
+                </h2>
+            </div>
+
+            <!-- Dynamic Split Cards -->
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <div class="bg-white border-3 border-mission-dark p-6 rounded-2xl pop-box-orange space-y-4">
+                    <span class="bg-mission-orange text-white font-mono font-black text-xs px-3 py-1 rounded uppercase">
+                        🏫 SUI BANCHI DI SCUOLA
+                    </span>
+                    <h3 class="text-2xl font-black text-mission-dark">Non servono biglietti aerei</h3>
+                    <p class="text-gray-700 font-medium text-sm md:text-base leading-relaxed">
+                        Essere missionari non significa per forza prendere un aereo e andare altrove. La tua <strong>terra di missione</strong> è il corridoio della scuola, la ricreazione, la chat di classe in cui qualcuno viene escluso.
+                    </p>
+                </div>
+
+                <div class="bg-mission-orange text-white p-6 rounded-2xl pop-box-red space-y-4">
+                    <span class="bg-mission-dark text-mission-amber font-mono font-black text-xs px-3 py-1 rounded uppercase">
+                        🔥 IL TUO IMPACT FACTOR
+                    </span>
+                    <h3 class="text-2xl font-black text-mission-amber">Portatori dell'amore di Dio</h3>
+                    <p class="text-white font-medium text-sm md:text-base leading-relaxed">
+                        Don Bosco affidava i ragazzi più giovani a quelli più grandi perché un ragazzo capisce un altro ragazzo meglio di chiunque altro. Sei un punto di riferimento, che tu ne sia consapevole o no!
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center max-w-6xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-2" class="text-mission-dark hover:underline">&larr; INDIETRO</a>
+            <a href="#slide-4" class="bg-mission-red text-white px-5 py-2.5 rounded-xl border-2 border-mission-dark font-black hover:bg-mission-orange transition">
+                3. FLASH MOB PREGHIERA &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= SLIDE 4: PREGHIERA & FLASH MOB ACTION ================= -->
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-4 md:p-8 bg-mission-orange text-white">
+
+        <div class="flex justify-between items-center max-w-6xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-mission-dark text-mission-amber px-3 py-1.5 rounded-none border-2 border-mission-dark font-black uppercase">
+                // 03 ACTION & PRAYER
+            </span>
+            <span class="bg-mission-red text-white px-3 py-1.5 rounded-none border-2 border-mission-dark font-black">
+                SLIDE 4 / 4
+            </span>
+        </div>
+
+        <div class="my-auto max-w-3xl mx-auto text-center space-y-6 w-full">
+
+            <div class="inline-flex items-center gap-2 bg-mission-dark text-mission-amber font-mono font-black text-xs px-4 py-1.5 rounded-full border-2 border-mission-dark uppercase">
+                🙏 PREGHIERA DEL PROTAGONISTA
+            </div>
+
+            <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight">
+                RENDICI SEGNI VIVI <br>
+                <span class="bg-mission-red text-white px-2">DEL TUO AMORE</span>
+            </h2>
+
+            <!-- Box Preghiera WOW -->
+            <div class="bg-white text-mission-dark p-6 md:p-8 rounded-3xl pop-box-black text-left md:text-center space-y-4">
+                <p class="text-base md:text-xl font-bold leading-relaxed italic">
+                    Signore, non farci aspettare domani per essere testimoni. <br><br>
+                    Insegnaci a prenderci cura degli altri. Fai di noi dei veri leader del bene, proprio qui, tra i banchi della nostra scuola.<br><br>Amen.
+                </p>
+            </div>
+
+          
+        </div>
+
+        <div class="flex justify-between items-center max-w-6xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-3" class="text-white hover:underline">&larr; INDIETRO</a>
+            <span class="bg-mission-dark text-mission-amber px-4 py-2 rounded-xl border-2 border-mission-dark uppercase">
+                🚀 BUON GIOVEDÌ 15 OTTOBRE!
+            </span>
+        </div>
+    </section>
+
+</body>
+</html>

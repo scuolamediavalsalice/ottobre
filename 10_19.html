@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 19 ottobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mission: {
+                            orange: '#EA580C',   /* Arancio Missionario Intenso */
+                            bright: '#F97316',   /* Arancio Vivo */
+                            red: '#DC2626',      /* Rosso Fuoco / Terra */
+                            amber: '#F59E0B',    /* Ambra Caldo */
+                            cream: '#FFFBEB',    /* Sfondo Crema Caldo */
+                            peach: '#FFEDD5',    /* Pesca Chiaro Fill */
+                            dark: '#1C1917',     /* Antracite Ad Alto Contrasto */
+                            light: '#FFFFFF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+
+        /* POP MINIMAL FLAT SHADOWS */
+        .pop-minimal-orange {
+            border: 4px solid #1C1917;
+            box-shadow: 8px 8px 0px 0px #EA580C;
+        }
+        .pop-minimal-red {
+            border: 4px solid #1C1917;
+            box-shadow: 8px 8px 0px 0px #DC2626;
+        }
+        .pop-minimal-amber {
+            border: 4px solid #1C1917;
+            box-shadow: 8px 8px 0px 0px #F59E0B;
+        }
+        .pop-minimal-black {
+            border: 4px solid #1C1917;
+            box-shadow: 8px 8px 0px 0px #1C1917;
+        }
+    </style>
+</head>
+<body class="bg-mission-cream text-mission-dark font-sans antialiased overflow-x-hidden selection:bg-mission-orange selection:text-white">
+
+    <!-- ================= SLIDE 1: POP-MINIMAL HERO CENTRATA ================= -->
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-10 bg-mission-cream relative border-b-8 border-mission-dark">
+
+        <!-- Top Header Minimal -->
+        <div class="flex justify-between items-center max-w-4xl mx-auto w-full font-mono text-xs md:text-sm font-black">
+            <span class="bg-mission-dark text-mission-cream px-3 py-1.5 border-2 border-mission-dark">
+                SCUOLA MEDIA VALSALICE
+            </span>
+            <span class="bg-mission-orange text-white px-3 py-1.5 border-2 border-mission-dark">
+                LUNEDÌ 19 OTTOBRE
+            </span>
+        </div>
+
+        <!-- HERO CENTRATA -->
+        <div class="my-auto max-w-3xl mx-auto w-full">
+            <div class="bg-mission-amber p-8 md:p-12 rounded-3xl pop-minimal-black text-center flex flex-col items-center space-y-6">
+                
+                <span class="inline-block bg-mission-dark text-mission-amber font-mono font-black text-xs md:text-sm px-4 py-1.5 rounded-full uppercase tracking-widest">
+                    👀 OTTOBRE MISSIONARIO
+                </span>
+
+                <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tight leading-none">
+                    BATTERE <br>
+                    <span class="bg-mission-red text-white px-4 py-1 inline-block border-3 border-mission-dark my-2 transform -rotate-1">
+                        L'INDIFFERENZA
+                    </span>
+                </h1>
+
+                <p class="text-base md:text-xl font-bold leading-relaxed text-mission-dark max-w-xl">
+                    In una folla dove ognuno guarda altrove, il missionario<br>è chi sceglie di tenere gli occhi aperti.
+                </p>
+
+                <div class="pt-2">
+                    <span class="bg-mission-cream text-mission-dark font-mono text-xs md:text-sm font-black px-5 py-2.5 rounded-xl border-2 border-mission-dark inline-block uppercase">
+                        🎯 OBIETTIVO: SMETTERE DI GUARDARE ALTROVE
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center max-w-4xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="text-mission-orange hidden md:inline">#NOINDIFFERENZA</span>
+            <a href="#slide-2" class="w-full md:w-auto text-center bg-mission-orange text-white px-6 py-3 rounded-xl border-2 border-mission-dark font-black hover:bg-mission-red transition transform hover:-translate-y-0.5">
+                1. ATTIVITÀ LAMPO &darr;
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ================= SLIDE 2: ATTIVITÀ LAMPO (PRIMA ORA!) ================= -->
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-10 bg-mission-peach border-b-8 border-mission-dark">
+
+        <div class="flex justify-between items-center max-w-4xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-mission-red text-white px-3 py-1.5 border-2 border-mission-dark font-black uppercase">
+                // 01 ESPERIMENTO IN COPPIA
+            </span>
+            <span class="bg-mission-dark text-mission-amber px-3 py-1.5 border-2 border-mission-dark font-black">
+                SLIDE 2 / 4
+            </span>
+        </div>
+
+        <div class="my-auto max-w-3xl mx-auto w-full space-y-6">
+
+            <div class="text-center space-y-2">
+                <span class="bg-mission-dark text-mission-amber font-mono font-black text-xs px-4 py-1.5 rounded-full border-2 border-mission-dark uppercase tracking-widest">
+                    ⚡ ATTIVITÀ: "LO SPECCHIO INVISIBILE"
+                </span>
+                <h2 class="text-3xl md:text-5xl font-black text-mission-dark uppercase tracking-tight">
+                    METTETEVI A COPPIE!
+                </h2>
+            </div>
+
+            <!-- Single Minimal Card divided into 2 steps -->
+            <div class="bg-white border-4 border-mission-dark rounded-3xl p-6 md:p-10 pop-minimal-orange space-y-6">
+                
+                <!-- Step 1 -->
+                <div class="flex items-start gap-4">
+                    <span class="bg-mission-orange text-white font-mono font-black text-lg px-3 py-1 rounded-xl border-2 border-mission-dark shrink-0">
+                        1
+                    </span>
+                    <div class="space-y-1">
+                        <h4 class="font-black text-lg md:text-xl text-mission-dark uppercase">30 SECONDI: GUARDA L'ALTRO NEGLI OCCHI</h4>
+                        <p class="text-sm md:text-base font-bold text-gray-700 leading-snug">
+                            Uno fa dei piccoli gesti (muovere le mani, sorridere, toccarsi i capelli) e l'altro deve replicarli in tempo reale come uno specchio. Poi scambiatevi i ruoli.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border-b-2 border-dashed border-gray-300"></div>
+
+                <!-- Step 2 -->
+                <div class="flex items-start gap-4">
+                    <span class="bg-mission-red text-white font-mono font-black text-lg px-3 py-1 rounded-xl border-2 border-mission-dark shrink-0">
+                        2
+                    </span>
+                    <div class="space-y-1">
+                        <h4 class="font-black text-lg md:text-xl text-mission-dark uppercase">30 SECONDI: GUARDA PER TERRA!</h4>
+                        <p class="text-sm md:text-base font-bold text-gray-700 leading-snug">
+                            Rifate lo stesso esercizio, ma questa volta <strong>senza guardarvi mai</strong>. Fissate il pavimento e provate comunque a coordinarvi.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center max-w-4xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-1" class="text-mission-dark hover:underline">&larr; INDIETRO</a>
+            <a href="#slide-3" class="bg-mission-orange text-white px-5 py-2.5 rounded-xl border-2 border-mission-dark font-black hover:bg-mission-red transition">
+                2. PERCHÉ L'ABBIAMO FATTO? &darr;
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ================= SLIDE 3: LA RIFLESSIONE (DOPO L'ATTIVITÀ) ================= -->
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-10 bg-mission-cream border-b-8 border-mission-dark">
+
+        <div class="flex justify-between items-center max-w-4xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-mission-orange text-white px-3 py-1.5 border-2 border-mission-dark font-black uppercase">
+                // 02 LA RIFLESSIONE
+            </span>
+            <span class="text-mission-orange">SLIDE 3 / 4</span>
+        </div>
+
+        <div class="my-auto max-w-3xl mx-auto w-full space-y-6">
+
+            <div class="text-center space-y-2">
+                <span class="bg-mission-amber text-mission-dark font-mono font-black text-xs px-4 py-1.5 border-2 border-mission-dark uppercase tracking-widest inline-block">
+                    💡 CHE COSA ABBIAMO CAPITO?
+                </span>
+                <h2 class="text-3xl md:text-5xl font-black text-mission-dark uppercase tracking-tight">
+                    SENZA SGUARDO <br>
+                    <span class="text-mission-red">NON C'È RELAZIONE</span>
+                </h2>
+            </div>
+
+            <!-- Card Spiegazione Pop-Minimal -->
+            <div class="bg-mission-dark text-white p-8 md:p-10 rounded-3xl pop-minimal-red space-y-6">
+                
+                <p class="text-lg md:text-2xl font-black leading-relaxed text-mission-amber">
+                    Hai visto com'è impossibile capirsi o aiutarsi quando si guarda altrove?
+                </p>
+
+                <p class="text-sm md:text-lg font-medium text-gray-200 leading-relaxed">
+                    Il contrario della dedizione non è l'odio, ma l'<strong>indifferenza</strong>: far finta che gli altri non esistano. Un missionario ha gli occhi aperti per accorgersi di chi è solo o messo da parte.
+                </p>
+
+                <div class="p-4 bg-white/10 rounded-2xl border-2 border-white/20 font-mono text-xs md:text-sm text-center font-bold text-mission-amber">
+                    👀 Guardare qualcuno negli occhi significa dirgli: "Tu per me esisti".
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center max-w-4xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-2" class="text-mission-dark hover:underline">&larr; INDIETRO</a>
+            <a href="#slide-4" class="bg-mission-red text-white px-5 py-2.5 rounded-xl border-2 border-mission-dark font-black hover:bg-mission-orange transition">
+                3. CONCLUSIONE & PREGHIERA &darr;
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ================= SLIDE 4: QUOTE & PRAYER ================= -->
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-10 bg-mission-orange text-white">
+
+        <div class="flex justify-between items-center max-w-4xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-mission-dark text-mission-amber px-3 py-1.5 border-2 border-mission-dark font-black uppercase">
+                // 03 PROPOSITO & PREGHIERA
+            </span>
+            <span class="bg-mission-red text-white px-3 py-1.5 border-2 border-mission-dark font-black">
+                SLIDE 4 / 4
+            </span>
+        </div>
+
+        <div class="my-auto max-w-3xl mx-auto text-center space-y-6 w-full">
+
+            <!-- Big Quote Card Minimal -->
+            <div class="bg-white text-mission-dark p-8 md:p-10 rounded-3xl pop-minimal-black space-y-4">
+                
+                <span class="bg-mission-amber text-mission-dark font-mono font-black text-xs px-3 py-1 border border-mission-dark rounded uppercase">
+                    💬 FRASE DELLA GIORNATA
+                </span>
+                
+                <blockquote class="text-xl md:text-3xl font-black leading-snug italic text-mission-dark">
+                    «L'indifferenza inizia quando smettiamo di guardare chi ci sta accanto.»
+                </blockquote>
+            </div>
+
+            <!-- Prayer Box Minimal -->
+            <div class="bg-mission-dark text-white p-6 md:p-8 rounded-3xl pop-minimal-amber space-y-3">
+                <div class="inline-block bg-mission-red text-white font-mono font-black text-xs px-3 py-1 rounded uppercase border border-white">
+                    🙏 PREGHIERA DEL LUNEDÌ
+                </div>
+                <p class="text-base md:text-xl font-bold leading-relaxed italic text-mission-cream">
+                    Signore, donaci occhi capaci di vedere oltre le nostre distrazioni. <br>
+                    Insegnaci a non ignorare chi ci cammina accanto e a donare attenzione e rispetto a ogni compagno. Amen.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center max-w-4xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-3" class="text-white hover:underline">&larr; INDIETRO</a>
+            <span class="bg-mission-dark text-mission-amber px-4 py-2 rounded-xl border-2 border-mission-dark uppercase">
+                🚀 BUON LUNEDÌ 19 OTTOBRE!
+            </span>
+        </div>
+    </section>
+
+</body>
+</html>

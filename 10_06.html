@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 6 ottobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fire: {
+                            bg: '#FFF8F0',        /* Cream White Warm */
+                            dark: '#1C0A00',      /* Deep Charcoal Brown */
+                            primary: '#FF5500',   /* Electric Orange */
+                            amber: '#FF9900',     /* Bright Amber */
+                            peach: '#FFD8B8',     /* Soft Peach Accent */
+                            red: '#D9381E'        /* Terracotta Red */
+                        }
+                    },
+                    fontFamily: {
+                        mono: ['ui-monospace', 'monospace'],
+                        sans: ['Trebuchet MS', 'Arial Black', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .pop-shadow-orange {
+            box-shadow: 6px 6px 0px 0px #FF5500;
+        }
+        .pop-shadow-dark {
+            box-shadow: 6px 6px 0px 0px #1C0A00;
+        }
+        .pop-shadow-amber {
+            box-shadow: 6px 6px 0px 0px #FF9900;
+        }
+        .street-border {
+            border: 3.5px solid #1C0A00;
+        }
+    </style>
+</head>
+<body class="bg-fire-bg text-fire-dark font-sans antialiased overflow-x-hidden selection:bg-fire-primary selection:text-white">
+
+    <!-- SLIDE 1: FANZINE / TYPO POSTER HERO (Focus sul Motto) -->
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-fire-bg border-b-8 border-fire-dark relative overflow-hidden">
+        
+        <!-- Header Top -->
+        <div class="flex justify-between items-center border-b-4 border-fire-dark pb-4 font-mono text-xs md:text-sm font-black">
+            <span class="bg-fire-dark text-white px-3 py-1 uppercase tracking-widest street-border">
+                SCUOLA MEDIA VALSALICE
+            </span>
+            <span class="bg-fire-primary text-white px-3 py-1 tracking-widest uppercase street-border">
+                MARTEDÌ 6 OTTOBRE
+            </span>
+        </div>
+
+        <!-- Main Poster Content -->
+        <div class="my-auto max-w-5xl mx-auto text-center space-y-6 w-full">
+            
+            <div class="inline-block bg-fire-amber text-fire-dark font-mono font-black text-xs md:text-sm px-4 py-1.5 uppercase street-border pop-shadow-dark -rotate-1">
+                🔥 IL MOTTO SALESIANO: DA MIHI ANIMAS, CETERA TOLLE
+            </div>
+
+            <h1 class="text-6xl md:text-9xl font-black uppercase tracking-tight leading-none text-fire-dark">
+                DA MIHI <br><span class="bg-fire-primary text-white px-4 street-border inline-block rotate-1 my-1">ANIMAS</span>
+            </h1>
+
+            <p class="text-xl md:text-3xl font-mono text-fire-red font-black uppercase tracking-wider">
+                "Dammi le anime, tieniti tutto il resto"
+            </p>
+
+                   </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t-4 border-fire-dark font-mono text-xs font-bold">
+            <span class="hidden md:inline text-fire-primary">LA PASSIONE CHE TRASFORMA LE VITE 🔥</span>
+            <a href="#slide-2" class="w-full md:w-auto text-center bg-fire-dark text-white px-6 py-3 hover:bg-fire-primary transition uppercase street-border pop-shadow-orange">
+                1. ASCOLTA IL BRANO (VIDEO) &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 2: MEDIA PLAYER YOUTUBE (Canzone Ufficiale Da Mihi Animas) -->
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-fire-primary text-white">
+        
+        <div class="flex justify-between items-center border-b-4 border-fire-dark pb-4 font-mono text-xs font-bold">
+            <span class="bg-fire-dark text-fire-amber px-3 py-1 uppercase tracking-wider street-border">// 01 STIMOLO MUSICALE</span>
+            <span class="text-white">Slide 2 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-5xl mx-auto w-full grid md:grid-cols-12 gap-8 items-center">
+            
+            <!-- Descrizione dell'Attività -->
+            <div class="md:col-span-5 space-y-6">
+                <span class="bg-fire-amber text-fire-dark font-mono font-black text-xs px-3 py-1 uppercase street-border inline-block">
+                    🎵 ASCOLTO ATTIVO (1.5 MIN)
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-black uppercase leading-tight text-white">
+                    Senti il ritmo <br><span class="bg-fire-dark text-fire-amber px-2 street-border inline-block -rotate-1">del Cuore</span>
+                </h2>
+
+                <p class="text-base font-medium text-fire-peach leading-relaxed">
+                    Ascoltiamo insieme questa canzone salesiana e riflettiamo sul testo:<strong> cosa significa spendere tutta la propria vita per la felicità di qualcun altro?</strong>
+                </p>
+
+                </div>
+
+            <!-- Card Video Youtube Ufficiale -->
+            <div class="md:col-span-7">
+                <a href="https://www.youtube.com/watch?v=wYU7CgxOQGA" target="_blank" rel="noopener noreferrer" class="group relative block w-full aspect-video rounded-3xl overflow-hidden street-border pop-shadow-dark bg-black">
+                    <!-- Thumbnail dal video YouTube fornito -->
+                    <img src="https://img.youtube.com/vi/wYU7CgxOQGA/hqdefault.jpg" alt="Da Mihi Animas - Canzone Salesiana" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-90 group-hover:opacity-100">
+                    
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition flex flex-col justify-between p-5">
+                        <span class="bg-red-600 text-white font-mono font-bold text-[10px] px-2.5 py-1 uppercase tracking-wider rounded w-max flex items-center gap-1 street-border">
+                            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            BRANO UFFICIALE (YOUTUBE)
+                        </span>
+
+                        <div class="self-center">
+                            <div class="w-16 h-16 md:w-20 md:h-20 bg-fire-amber text-fire-dark rounded-full flex items-center justify-center street-border group-hover:scale-110 group-hover:bg-fire-peach transition pop-shadow-dark">
+                                <svg class="w-8 h-8 md:w-10 md:h-10 fill-current ml-1" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between items-end">
+                            <span class="text-white text-xs font-mono font-bold bg-fire-dark/80 px-3 py-1.5 rounded street-border">
+                                ▶ "Da Mihi Animas" — M. Bazzoni ↗
+                            </span>
+                            <span class="text-fire-amber text-[11px] font-mono font-bold bg-black/70 px-2 py-1 rounded">
+                                ⏱️ 1.5 MIN
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-4 border-fire-dark font-mono text-xs font-bold">
+            <a href="#slide-1" class="text-white hover:underline">&larr; INDIETRO</a>
+            <a href="#slide-3" class="bg-fire-dark text-white px-4 py-2 hover:bg-fire-amber hover:text-fire-dark transition uppercase street-border">
+                2. VAI ALLA RIFLESSIONE &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: LA RIFLESSIONE (Layout Poster Editoriale / Warm Colors) -->
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-fire-bg text-fire-dark">
+        
+        <div class="flex justify-between items-center border-b-4 border-fire-dark pb-4 font-mono text-xs font-bold">
+            <span class="bg-fire-red text-white px-3 py-1 uppercase tracking-wider street-border">// 02 LA DEDIZIONE DI DON BOSCO</span>
+            <span class="text-gray-500">Slide 3 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-5xl mx-auto w-full grid md:grid-cols-12 gap-8 items-stretch">
+            
+            <!-- Left Card: La Vita per i Giovani -->
+            <div class="md:col-span-7 bg-white p-8 rounded-2xl street-border pop-shadow-orange flex flex-col justify-between space-y-6">
+                <div class="space-y-4">
+                    <span class="bg-fire-amber text-fire-dark font-mono font-black text-xs px-3 py-1 uppercase street-border inline-block">
+                        💡 FELICITÀ IN TERRA E IN CIELO
+                    </span>
+
+                    <h2 class="text-3xl md:text-5xl font-black uppercase leading-tight">
+                        Notte e Giorno <br><span class="bg-fire-primary text-white px-2 street-border inline-block rotate-1">per accoglierli</span>
+                    </h2>
+
+                    <p class="text-base font-medium text-gray-800 leading-relaxed">
+                        Don Bosco non ha tenuto nulla per sé. Ha speso le sue energie, le sue notti e la sua salute per creare una casa che accogliesse chi non aveva nessuno.
+                    </p>
+                                    </div>
+
+                <div class="p-3 bg-fire-peach street-border font-mono text-xs font-bold text-fire-red">
+                    🔥 "Per voi io studio, per voi lavoro, per voi vivo, per voi sono disposto anche a dare la vita."
+                </div>
+            </div>
+
+            <!-- Right Card: Callout Quote -->
+            <div class="md:col-span-5 bg-fire-dark text-white p-8 rounded-2xl street-border pop-shadow-amber flex flex-col justify-between">
+                <span class="font-mono font-black text-xs text-fire-amber uppercase bg-fire-primary px-3 py-1 street-border w-max">
+                    IL MESSAGGIO
+                </span>
+
+                <blockquote class="text-3xl md:text-4xl font-black uppercase leading-tight text-white my-4">
+                    "Basta che siate giovani perché io vi ami assai."
+                </blockquote>
+
+                <div class="border-t-2 border-fire-amber pt-4 font-mono text-xs font-black uppercase text-fire-amber">
+                    — San Giovanni Bosco
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-4 border-fire-dark font-mono text-xs font-bold">
+            <a href="#slide-2" class="text-gray-500 hover:text-fire-dark">&larr; INDIETRO</a>
+            <a href="#slide-4" class="bg-fire-dark text-white px-4 py-2 hover:bg-fire-primary transition uppercase street-border">
+                3. SFIDA DEL GIORNO &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: SFIDA PRATICA (Layout Call To Action Warm Fire) -->
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-12 bg-white text-fire-dark">
+        
+        <div class="flex justify-between items-center border-b-4 border-fire-dark pb-4 font-mono text-xs font-bold">
+            <span class="bg-fire-amber text-fire-dark px-3 py-1 uppercase tracking-wider street-border">// 03 IMPEGNO PRATICO</span>
+            <span class="text-gray-500">Slide 4 di 4</span>
+        </div>
+
+        <div class="my-auto max-w-4xl mx-auto text-center space-y-8 w-full">
+            
+            <div class="inline-block bg-fire-primary text-white font-mono font-black text-xs uppercase px-4 py-1.5 street-border pop-shadow-dark rotate-1">
+                🎯 METTI IN PRATICA IL "DA MIHI ANIMAS"
+            </div>
+
+            <h2 class="text-4xl md:text-7xl font-black uppercase leading-none text-fire-dark">
+                DONA IL TUO TEMPO <br><span class="bg-fire-amber px-4 street-border inline-block -rotate-1 mt-2">PER LA FELICITÀ ALTRUI</span>
+            </h2>
+         
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-4 border-fire-dark font-mono text-xs font-bold">
+            <a href="#slide-3" class="text-gray-500 hover:text-fire-dark">&larr; INDIETRO</a>
+            <span class="text-fire-primary font-black text-sm uppercase">BUON MARTEDÌ 6 OTTOBRE! 🚀</span>
+        </div>
+    </section>
+
+</body>
+</html>

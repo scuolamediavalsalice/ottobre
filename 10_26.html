@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buongiorno 26 ottobre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#FAF7F2',
+                            dark: '#1C1917',
+                            muted: '#78716C',
+                            terracotta: '#D97706',
+                            rust: '#C2410C',
+                            peach: '#FEF3C7',
+                            card: '#FFFFFF',
+                            border: '#1C1917',
+                            sky: '#E0F2FE',
+                            blue: '#0284C7'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+            snap-type: y mandatory;
+        }
+        section {
+            snap-align: start;
+            snap-stop: always;
+        }
+        .pop-card {
+            border: 3px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #1C1917;
+        }
+        .pop-card-rust {
+            border: 3px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #C2410C;
+        }
+        .pop-card-amber {
+            border: 3px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #D97706;
+        }
+        .pop-card-blue {
+            border: 3px solid #1C1917;
+            box-shadow: 5px 5px 0px 0px #0284C7;
+        }
+    </style>
+</head>
+<body class="bg-brand-bg text-brand-dark font-sans antialiased overflow-x-hidden">
+
+    <!-- SLIDE 1: ATTIVITÀ STIMOLO (GIOCO DI SQUADRA RAPIDO) -->
+    <section id="slide-1" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-10 border-b-4 border-brand-dark relative">
+        
+        <!-- Header -->
+        <div class="flex justify-between items-center pb-4 border-b-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-brand-dark text-white px-3 py-1 rounded-md uppercase tracking-wider">
+                Scuola media Valsalice
+            </span>
+            <span class="bg-brand-peach text-brand-dark border-2 border-brand-dark px-3 py-1 rounded-md">
+               Lunedì 26 ottobre
+            </span>
+        </div>
+
+        <!-- Contenuto Attività -->
+        <div class="my-auto max-w-3xl mx-auto w-full text-center space-y-6">
+            
+            <div class="inline-flex items-center gap-2 bg-brand-peach border-2 border-brand-dark font-mono font-bold text-xs md:text-sm px-4 py-1.5 rounded-full">
+                ⚡ SFIDA IN CLASSE
+            </div>
+
+            <h1 class="text-3xl md:text-5xl font-black tracking-tight text-brand-dark leading-tight">
+                COSTRUIRE <br>
+                <span class="bg-brand-blue text-white px-3 py-1 rounded-lg inline-block transform -rotate-1 mt-2 border-2 border-brand-dark">
+                    PONTI, NON MURI 🌉
+                </span>
+            </h1>
+
+            <div class="bg-brand-card p-6 md:p-8 rounded-2xl pop-card-blue text-left space-y-4">
+                <p class="text-base md:text-lg font-bold leading-relaxed text-brand-dark">
+                    👉 <strong>Proviamoci subito:</strong>
+                </p>
+                <div class="p-4 bg-brand-sky/60 rounded-xl border-2 border-brand-dark space-y-2">
+                    <p class="text-xs md:text-sm font-bold text-brand-dark">
+                        Staccate due banchi vicini di qualche centimetro. Usando solo <strong>matite, penne o righelli</strong>, provate a costruire insieme un piccolo ponte stabile tra le due superfici.
+                    </p>
+                </div>
+                <p class="text-xs md:text-sm font-bold text-brand-muted text-center pt-1">
+                    Cosa serve per farlo stare in piedi? Equilibrio, contatto e collaborazione!
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center pt-4 border-t-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="hidden md:inline text-brand-muted">MISSIONI SALESIANE</span>
+            <a href="#slide-2" class="w-full md:w-auto text-center bg-brand-blue text-white px-6 py-3 rounded-xl hover:bg-brand-dark transition duration-200 pop-card font-black">
+                ENTRIAMO NEL TEMA &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 2: INQUADRAMENTO CARISMATICO (DON CHÁVEZ) -->
+    <section id="slide-2" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-10 border-b-4 border-brand-dark bg-brand-sky/30">
+        
+        <div class="flex justify-between items-center pb-4 border-b-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-brand-blue text-white px-3 py-1 rounded-md uppercase tracking-wider">INQUADRAMENTO CARISMATICO</span>
+            <span class="text-brand-muted">SLIDE 2/4</span>
+        </div>
+
+        <div class="my-auto max-w-4xl mx-auto w-full space-y-6">
+            
+            <div class="text-center space-y-2">
+                <span class="bg-brand-card font-mono text-xs font-bold px-3 py-1 rounded-full border-2 border-brand-dark uppercase">
+                    🌍 Dialogo e Interculturalità
+                </span>
+                <h2 class="text-3xl md:text-4xl font-black text-brand-dark">
+                    Lo stile dei missionari salesiani
+                </h2>
+            </div>
+
+            <div class="bg-brand-card p-6 md:p-8 rounded-2xl pop-card space-y-4">
+                <p class="text-base md:text-lg font-bold leading-relaxed text-brand-dark">
+                    Don Pascual Chávez (9° successore di Don Bosco) ci ricorda che la missione salesiana non si fa imponendo cose agli altri, ma **incontrando** le persone dove si trovano.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-4 pt-2">
+                    <div class="bg-brand-sky/50 p-4 rounded-xl border-2 border-brand-dark pop-card-blue">
+                        <div class="text-2xl">🗣️</div>
+                        <h4 class="font-black text-sm text-brand-dark mt-1">Lingue & Culture</h4>
+                        <p class="text-xs text-brand-muted font-medium mt-1">Imparare a comprendere chi parla e pensa diversamente da noi.</p>
+                    </div>
+                    <div class="bg-brand-peach/50 p-4 rounded-xl border-2 border-brand-dark pop-card-amber">
+                        <div class="text-2xl">🔨</div>
+                        <h4 class="font-black text-sm text-brand-dark mt-1">Abattere i Muri</h4>
+                        <p class="text-xs text-brand-muted font-medium mt-1">Superare il pregiudizio che ci fa considerare strano ciò che non conosciamo.</p>
+                    </div>
+                    <div class="bg-brand-card p-4 rounded-xl border-2 border-brand-dark pop-card-rust">
+                        <div class="text-2xl">🤝</div>
+                        <h4 class="font-black text-sm text-brand-dark mt-1">Rispetto Reciproco</h4>
+                        <p class="text-xs text-brand-muted font-medium mt-1">La dedizione vera crea legami di profonda amicizia e stima.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-1" class="text-brand-muted hover:text-brand-dark">&larr; INDIETRO</a>
+            <a href="#slide-3" class="bg-brand-dark text-white px-5 py-2.5 rounded-xl hover:bg-brand-blue transition font-black">
+                PERCHÉ CI RIGUARDA? &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: RIFLESSIONE (DALLA MISSIONE ALLA NOSTRA CLASSE) -->
+    <section id="slide-3" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-10 border-b-4 border-brand-dark">
+        
+        <div class="flex justify-between items-center pb-4 border-b-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-brand-terracotta text-white px-3 py-1 rounded-md uppercase tracking-wider">RIFLESSIONE</span>
+            <span class="text-brand-muted">SLIDE 3/4</span>
+        </div>
+
+        <div class="my-auto max-w-3xl mx-auto w-full space-y-6">
+            
+            <h2 class="text-2xl md:text-4xl font-black text-brand-dark text-center">
+                Muri o ponti tra i banchi di scuola?
+            </h2>
+
+            <div class="bg-brand-card p-6 md:p-8 rounded-2xl pop-card space-y-4">
+                <p class="text-sm md:text-base font-semibold leading-relaxed text-brand-dark">
+                    Non serve andare dall'altra parte del mondo per trovare la "diversità". La troviamo ogni giorno in classe: modi di vestire, gusti musicali, accenti, idee diverse dalle nostre.
+                </p>
+
+                <div class="space-y-3 font-medium text-xs md:text-sm">
+                    <div class="flex items-start gap-3 bg-red-50 p-3 rounded-lg border-2 border-brand-dark">
+                        <span class="text-base">🧱</span>
+                        <span><strong>Costruire un MURO significa</strong> fare battute per ridicolizzare una differenza, isolare qualcuno perché è "diverso", giudicare senza conoscere.</span>
+                    </div>
+                    <div class="flex items-start gap-3 bg-blue-50 p-3 rounded-lg border-2 border-brand-dark">
+                        <span class="text-base">🌉</span>
+                        <span><strong>Costruire un PONTE significa</strong> ascoltare con curiosità, rispettare le idee altrui e fare spazio a tutti, anche a chi ci sembra lontano.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-2" class="text-brand-muted hover:text-brand-dark">&larr; INDIETRO</a>
+            <a href="#slide-4" class="bg-brand-blue text-white px-5 py-2.5 rounded-xl hover:bg-brand-dark transition font-black">
+                PREGHIERA &darr;
+            </a>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: PREGHIERA E IMPEGNO CONCRETO -->
+    <section id="slide-4" class="min-h-screen w-full flex flex-col justify-between p-6 md:p-10 bg-brand-peach/20">
+        
+        <div class="flex justify-between items-center pb-4 border-b-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <span class="bg-brand-dark text-white px-3 py-1 rounded-md uppercase tracking-wider">PREGHIERA</span>
+            <span class="text-brand-muted">SLIDE 4/4</span>
+        </div>
+
+        <div class="my-auto max-w-3xl mx-auto text-center space-y-6 w-full">
+            
+            <div class="inline-flex items-center gap-2 bg-brand-card border-2 border-brand-dark font-mono font-bold text-xs px-4 py-1.5 rounded-full">
+                🙏 PREGHIERA DEL MATTINO
+            </div>
+
+            <!-- Box Preghiera -->
+            <div class="bg-brand-card p-6 md:p-8 rounded-2xl pop-card text-left md:text-center space-y-4">
+                <p class="text-base md:text-lg font-bold text-brand-dark leading-relaxed">
+                    Signore, ti ringraziamo per la bellezza della diversità.<br><br>
+                    Insegnaci ad abattere i muri dell'incomprensione e della pigrizia. Donaci la curiosità di ascoltare, il coraggio di rispettare chi è diverso da noi e il desiderio di costruire ponti di vera amicizia. <br>Amen.
+                </p>
+            </div>
+
+                     </div>
+
+        </div>
+
+        <div class="flex justify-between items-center pt-4 border-t-2 border-brand-dark max-w-5xl mx-auto w-full font-mono text-xs md:text-sm font-bold">
+            <a href="#slide-3" class="text-brand-muted hover:text-brand-dark">&larr; INDIETRO</a>
+            <span class="text-brand-blue uppercase font-black">BUON SETTIMANA E BUON LAVORO! ✨</span>
+        </div>
+    </section>
+
+</body>
+</html>
